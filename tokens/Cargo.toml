@@ -5,8 +5,8 @@ include = [
   "Cargo.toml",
   "src/**/*"
 ]
-license = "GNU Affero General Public License Version 3"
-license-file = "LICENSE.md"
+license.workspace = true
+license-file.workspace = true
 name = "tokens"
 publish = false
 readme = "README.md"

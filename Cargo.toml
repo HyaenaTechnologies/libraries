@@ -9,6 +9,8 @@ include = [
   "Cargo.toml",
   "src/**/*"
 ]
+license = "GNU Affero General Public License Version 3"
+license-file = "LICENSE.md"
 name = "libraries"
 publish = false
 readme = "README.md"

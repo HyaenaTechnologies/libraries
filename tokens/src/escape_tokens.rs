@@ -13,7 +13,7 @@ pub const QUOTATION_MARK_TOKEN: EscapeToken = "\"";
 pub const TAB_TOKEN: EscapeToken = "\t";
 
 // Escape Token Vector
-pub fn escape_tokens_vector() -> Vec<EscapeToken> {
+pub fn escapes_vector() -> Vec<EscapeToken> {
     let strings: Vec<EscapeToken> = Vec::from([
         APOSTROPHE_TOKEN,
         BACKSLASH_TOKEN,

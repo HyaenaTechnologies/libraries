@@ -8,7 +8,6 @@ pub const CHARACTER_TOKEN: TokenType = "CHARACTER";
 pub const COMMENT_TOKEN: TokenType = "COMMENT";
 pub const DELIMITER_TOKEN: TokenType = "DELIMITER";
 pub const END_OF_FILE_TOKEN: TokenType = "EOF";
-pub const FLAG_TOKEN: TokenType = "FLAG";
 pub const ESCAPE_TOKEN: TokenType = "ESCAPE";
 pub const KEYWORD_TOKEN: TokenType = "KEYWORD";
 pub const NUMBER_TOKEN: TokenType = "NUMBER";
@@ -23,7 +22,6 @@ pub fn token_types_vector() -> Vec<TokenType> {
         DELIMITER_TOKEN,
         END_OF_FILE_TOKEN,
         ESCAPE_TOKEN,
-        FLAG_TOKEN,
         KEYWORD_TOKEN,
         NUMBER_TOKEN,
         NULL_TOKEN,

@@ -6,8 +6,6 @@ pub mod comment_tokens;
 
 pub mod delimiter_tokens;
 
-pub mod keyword_tokens;
-
 pub mod number_tokens;
 
 pub mod operator_tokens;

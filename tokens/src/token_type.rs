@@ -15,7 +15,7 @@ pub const NULL_TOKEN: TokenType = "NULL";
 pub const OPERATOR_TOKEN: TokenType = "OPERATOR";
 
 // Token Type Vector
-pub fn token_types_vector() -> Vec<TokenType> {
+pub fn types_vector() -> Vec<TokenType> {
     let token_types: Vec<TokenType> = Vec::from([
         CHARACTER_TOKEN,
         COMMENT_TOKEN,

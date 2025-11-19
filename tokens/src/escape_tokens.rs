@@ -4,24 +4,24 @@ use std::{primitive::str, vec::Vec};
 pub type EscapeToken = &'static str;
 
 // Escape Tokens
-pub const APOSTROPHE_TOKEN: EscapeToken = "\'";
-pub const BACKSLASH_TOKEN: EscapeToken = "\\";
-pub const CARRIAGE_RETURN_TOKEN: EscapeToken = "\r";
-pub const NEW_LINE_TOKEN: EscapeToken = "\n";
-pub const NULL_CHARACTER_TOKEN: EscapeToken = "\0";
-pub const QUOTATION_MARK_TOKEN: EscapeToken = "\"";
-pub const TAB_TOKEN: EscapeToken = "\t";
+pub const APOSTROPHE: EscapeToken = "\'";
+pub const BACKSLASH: EscapeToken = "\\";
+pub const CARRIAGE_RETURN: EscapeToken = "\r";
+pub const NEW_LINE: EscapeToken = "\n";
+pub const NULL_CHARACTER: EscapeToken = "\0";
+pub const QUOTATION_MARK: EscapeToken = "\"";
+pub const TAB: EscapeToken = "\t";
 
 // Escape Token Vector
 pub fn escapes_vector() -> Vec<EscapeToken> {
     let strings: Vec<EscapeToken> = Vec::from([
-        APOSTROPHE_TOKEN,
-        BACKSLASH_TOKEN,
-        CARRIAGE_RETURN_TOKEN,
-        NEW_LINE_TOKEN,
-        NULL_CHARACTER_TOKEN,
-        QUOTATION_MARK_TOKEN,
-        TAB_TOKEN,
+        APOSTROPHE,
+        BACKSLASH,
+        CARRIAGE_RETURN,
+        NEW_LINE,
+        NULL_CHARACTER,
+        QUOTATION_MARK,
+        TAB,
     ]);
 
     return strings;

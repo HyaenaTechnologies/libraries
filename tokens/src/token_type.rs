@@ -4,28 +4,28 @@ use std::{primitive::str, vec::Vec};
 pub type TokenType = &'static str;
 
 // Token Types
-pub const CHARACTER_TOKEN: TokenType = "CHARACTER";
-pub const COMMENT_TOKEN: TokenType = "COMMENT";
-pub const DELIMITER_TOKEN: TokenType = "DELIMITER";
-pub const END_OF_FILE_TOKEN: TokenType = "EOF";
-pub const ESCAPE_TOKEN: TokenType = "ESCAPE";
-pub const KEYWORD_TOKEN: TokenType = "KEYWORD";
-pub const NUMBER_TOKEN: TokenType = "NUMBER";
-pub const NULL_TOKEN: TokenType = "NULL";
-pub const OPERATOR_TOKEN: TokenType = "OPERATOR";
+pub const CHARACTER: TokenType = "CHARACTER";
+pub const COMMENT: TokenType = "COMMENT";
+pub const DELIMITER: TokenType = "DELIMITER";
+pub const END_OF_FILE: TokenType = "EOF";
+pub const ESCAPE: TokenType = "ESCAPE";
+pub const KEYWORD: TokenType = "KEYWORD";
+pub const NUMBER: TokenType = "NUMBER";
+pub const NULL: TokenType = "NULL";
+pub const OPERATOR: TokenType = "OPERATOR";
 
 // Token Type Vector
 pub fn types_vector() -> Vec<TokenType> {
     let token_types: Vec<TokenType> = Vec::from([
-        CHARACTER_TOKEN,
-        COMMENT_TOKEN,
-        DELIMITER_TOKEN,
-        END_OF_FILE_TOKEN,
-        ESCAPE_TOKEN,
-        KEYWORD_TOKEN,
-        NUMBER_TOKEN,
-        NULL_TOKEN,
-        OPERATOR_TOKEN,
+        CHARACTER,
+        COMMENT,
+        DELIMITER,
+        END_OF_FILE,
+        ESCAPE,
+        KEYWORD,
+        NUMBER,
+        NULL,
+        OPERATOR,
     ]);
 
     return token_types;

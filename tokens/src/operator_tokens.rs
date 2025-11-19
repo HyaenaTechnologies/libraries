@@ -4,98 +4,98 @@ use std::{primitive::str, vec::Vec};
 pub type OperatorToken = &'static str;
 
 // Operator Tokens
-pub const ADDITION_TOKEN: OperatorToken = "+";
-pub const ADDITION_ASSIGNMENT_TOKEN: OperatorToken = "+=";
-pub const AND_TOKEN: OperatorToken = "&";
-pub const ANNOTATION_TOKEN: OperatorToken = "@";
-pub const ASSIGNMENT_TOKEN: OperatorToken = "=";
-pub const BITWISE_SHIFT_LEFT_TOKEN: OperatorToken = "<<";
-pub const BITWISE_SHIFT_RIGHT_TOKEN: OperatorToken = ">>";
-pub const BITWISE_SHIFT_LEFT_ASSIGNMENT_TOKEN: OperatorToken = "<<=";
-pub const BITWISE_SHIFT_RIGHT_ASSIGNMENT_TOKEN: OperatorToken = ">>=";
-pub const COLON_TOKEN: OperatorToken = ":";
-pub const COMMA_TOKEN: OperatorToken = ",";
-pub const DECREMENT_TOKEN: OperatorToken = "--";
-pub const DIVISION_TOKEN: OperatorToken = "/";
-pub const DIVISION_ASSIGNMENT_TOKEN: OperatorToken = "/=";
-pub const DOLLAR_SIGN_TOKEN: OperatorToken = "$";
-pub const EQUALITY_TOKEN: OperatorToken = "==";
-pub const EXCLUSIVE_OR_TOKEN: OperatorToken = "^";
-pub const FIELD_ACCESS_TOKEN: OperatorToken = ".";
-pub const GRAVE_ACCENT_TOKEN: OperatorToken = "`";
-pub const GREATER_THAN_TOKEN: OperatorToken = ">";
-pub const GREATER_OR_EQUAL_TOKEN: OperatorToken = ">=";
-pub const INCLUSIVE_RANGE_TOKEN: OperatorToken = "..=";
-pub const INCREMENT_TOKEN: OperatorToken = "++";
-pub const LAMBDA_TOKEN: OperatorToken = "=>";
-pub const LEFT_ARROW_TOKEN: OperatorToken = "<-";
-pub const LESS_THAN_TOKEN: OperatorToken = "<";
-pub const LESS_OR_EQUAL_TOKEN: OperatorToken = "<=";
-pub const MODULUS_TOKEN: OperatorToken = "%";
-pub const MODULUS_ASSIGNMENT_TOKEN: OperatorToken = "%=";
-pub const MULTIPLICATION_TOKEN: OperatorToken = "*";
-pub const MULTIPLICATION_ASSIGNMENT_TOKEN: OperatorToken = "*=";
-pub const NOT_TOKEN: OperatorToken = "!";
-pub const NOT_EQUAL_TOKEN: OperatorToken = "!=";
-pub const NULL_COALESCING_TOKEN: OperatorToken = "?";
-pub const OR_TOKEN: OperatorToken = "|";
-pub const PATH_SEPARATOR_TOKEN: OperatorToken = "::";
-pub const RANGE_TOKEN: OperatorToken = "..";
-pub const RETURN_TYPE_TOKEN: OperatorToken = "->";
-pub const SEMI_COLON_TOKEN: OperatorToken = ";";
-pub const SUBTRACTION_TOKEN: OperatorToken = "-";
-pub const SUBTRACTION_ASSIGNMENT_TOKEN: OperatorToken = "-=";
-pub const TILDE_TOKEN: OperatorToken = "~";
-pub const UNDERSCORE_TOKEN: OperatorToken = "_";
-pub const VARIADIC_RANGE_TOKEN: OperatorToken = "...";
+pub const ADDITION: OperatorToken = "+";
+pub const ADDITION_ASSIGNMENT: OperatorToken = "+=";
+pub const AND: OperatorToken = "&";
+pub const ANNOTATION: OperatorToken = "@";
+pub const ASSIGNMENT: OperatorToken = "=";
+pub const BITWISE_SHIFT_LEFT: OperatorToken = "<<";
+pub const BITWISE_SHIFT_RIGHT: OperatorToken = ">>";
+pub const BITWISE_SHIFT_LEFT_ASSIGNMENT: OperatorToken = "<<=";
+pub const BITWISE_SHIFT_RIGHT_ASSIGNMENT: OperatorToken = ">>=";
+pub const COLON: OperatorToken = ":";
+pub const COMMA: OperatorToken = ",";
+pub const DECREMENT: OperatorToken = "--";
+pub const DIVISION: OperatorToken = "/";
+pub const DIVISION_ASSIGNMENT: OperatorToken = "/=";
+pub const DOLLAR_SIGN: OperatorToken = "$";
+pub const EQUALITY: OperatorToken = "==";
+pub const EXCLUSIVE_OR: OperatorToken = "^";
+pub const FIELD_ACCESS: OperatorToken = ".";
+pub const GRAVE_ACCENT: OperatorToken = "`";
+pub const GREATER_THAN: OperatorToken = ">";
+pub const GREATER_OR_EQUAL: OperatorToken = ">=";
+pub const INCLUSIVE_RANGE: OperatorToken = "..=";
+pub const INCREMENT: OperatorToken = "++";
+pub const LAMBDA: OperatorToken = "=>";
+pub const LEFT_ARROW: OperatorToken = "<-";
+pub const LESS_THAN: OperatorToken = "<";
+pub const LESS_OR_EQUAL: OperatorToken = "<=";
+pub const MODULUS: OperatorToken = "%";
+pub const MODULUS_ASSIGNMENT: OperatorToken = "%=";
+pub const MULTIPLICATION: OperatorToken = "*";
+pub const MULTIPLICATION_ASSIGNMENT: OperatorToken = "*=";
+pub const NOT: OperatorToken = "!";
+pub const NOT_EQUAL: OperatorToken = "!=";
+pub const NULL_COALESCING: OperatorToken = "?";
+pub const OR: OperatorToken = "|";
+pub const PATH_SEPARATOR: OperatorToken = "::";
+pub const RANGE: OperatorToken = "..";
+pub const RETURN_TYPE: OperatorToken = "->";
+pub const SEMI_COLON: OperatorToken = ";";
+pub const SUBTRACTION: OperatorToken = "-";
+pub const SUBTRACTION_ASSIGNMENT: OperatorToken = "-=";
+pub const TILDE: OperatorToken = "~";
+pub const UNDERSCORE: OperatorToken = "_";
+pub const VARIADIC_RANGE: OperatorToken = "...";
 
 // Operator Token Vector
 pub fn operators_vector() -> Vec<OperatorToken> {
     let operators: Vec<OperatorToken> = Vec::from([
-        ADDITION_TOKEN,
-        ADDITION_ASSIGNMENT_TOKEN,
-        AND_TOKEN,
-        ANNOTATION_TOKEN,
-        ASSIGNMENT_TOKEN,
-        BITWISE_SHIFT_LEFT_TOKEN,
-        BITWISE_SHIFT_RIGHT_TOKEN,
-        BITWISE_SHIFT_LEFT_ASSIGNMENT_TOKEN,
-        BITWISE_SHIFT_RIGHT_ASSIGNMENT_TOKEN,
-        COLON_TOKEN,
-        COMMA_TOKEN,
-        DECREMENT_TOKEN,
-        DIVISION_TOKEN,
-        DIVISION_ASSIGNMENT_TOKEN,
-        DOLLAR_SIGN_TOKEN,
-        EQUALITY_TOKEN,
-        EXCLUSIVE_OR_TOKEN,
-        FIELD_ACCESS_TOKEN,
-        GRAVE_ACCENT_TOKEN,
-        GREATER_THAN_TOKEN,
-        GREATER_OR_EQUAL_TOKEN,
-        INCLUSIVE_RANGE_TOKEN,
-        INCREMENT_TOKEN,
-        LAMBDA_TOKEN,
-        LEFT_ARROW_TOKEN,
-        LESS_THAN_TOKEN,
-        LESS_OR_EQUAL_TOKEN,
-        MODULUS_TOKEN,
-        MODULUS_ASSIGNMENT_TOKEN,
-        MULTIPLICATION_TOKEN,
-        MULTIPLICATION_ASSIGNMENT_TOKEN,
-        NOT_TOKEN,
-        NOT_EQUAL_TOKEN,
-        NULL_COALESCING_TOKEN,
-        OR_TOKEN,
-        PATH_SEPARATOR_TOKEN,
-        RANGE_TOKEN,
-        RETURN_TYPE_TOKEN,
-        SEMI_COLON_TOKEN,
-        SUBTRACTION_TOKEN,
-        SUBTRACTION_ASSIGNMENT_TOKEN,
-        TILDE_TOKEN,
-        UNDERSCORE_TOKEN,
-        VARIADIC_RANGE_TOKEN,
+        ADDITION,
+        ADDITION_ASSIGNMENT,
+        AND,
+        ANNOTATION,
+        ASSIGNMENT,
+        BITWISE_SHIFT_LEFT,
+        BITWISE_SHIFT_RIGHT,
+        BITWISE_SHIFT_LEFT_ASSIGNMENT,
+        BITWISE_SHIFT_RIGHT_ASSIGNMENT,
+        COLON,
+        COMMA,
+        DECREMENT,
+        DIVISION,
+        DIVISION_ASSIGNMENT,
+        DOLLAR_SIGN,
+        EQUALITY,
+        EXCLUSIVE_OR,
+        FIELD_ACCESS,
+        GRAVE_ACCENT,
+        GREATER_THAN,
+        GREATER_OR_EQUAL,
+        INCLUSIVE_RANGE,
+        INCREMENT,
+        LAMBDA,
+        LEFT_ARROW,
+        LESS_THAN,
+        LESS_OR_EQUAL,
+        MODULUS,
+        MODULUS_ASSIGNMENT,
+        MULTIPLICATION,
+        MULTIPLICATION_ASSIGNMENT,
+        NOT,
+        NOT_EQUAL,
+        NULL_COALESCING,
+        OR,
+        PATH_SEPARATOR,
+        RANGE,
+        RETURN_TYPE,
+        SEMI_COLON,
+        SUBTRACTION,
+        SUBTRACTION_ASSIGNMENT,
+        TILDE,
+        UNDERSCORE,
+        VARIADIC_RANGE,
     ]);
 
     return operators;

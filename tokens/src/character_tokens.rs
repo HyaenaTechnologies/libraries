@@ -4,114 +4,114 @@ use std::{primitive::str, vec::Vec};
 pub type CharacterToken = &'static str;
 
 // Character Tokens
-pub const A_TOKEN: CharacterToken = "a";
-pub const B_TOKEN: CharacterToken = "b";
-pub const C_TOKEN: CharacterToken = "c";
-pub const D_TOKEN: CharacterToken = "d";
-pub const E_TOKEN: CharacterToken = "e";
-pub const F_TOKEN: CharacterToken = "f";
-pub const G_TOKEN: CharacterToken = "g";
-pub const H_TOKEN: CharacterToken = "h";
-pub const I_TOKEN: CharacterToken = "i";
-pub const J_TOKEN: CharacterToken = "j";
-pub const K_TOKEN: CharacterToken = "k";
-pub const L_TOKEN: CharacterToken = "l";
-pub const M_TOKEN: CharacterToken = "m";
-pub const N_TOKEN: CharacterToken = "n";
-pub const O_TOKEN: CharacterToken = "o";
-pub const P_TOKEN: CharacterToken = "p";
-pub const Q_TOKEN: CharacterToken = "q";
-pub const R_TOKEN: CharacterToken = "r";
-pub const S_TOKEN: CharacterToken = "s";
-pub const T_TOKEN: CharacterToken = "t";
-pub const U_TOKEN: CharacterToken = "u";
-pub const V_TOKEN: CharacterToken = "v";
-pub const W_TOKEN: CharacterToken = "w";
-pub const X_TOKEN: CharacterToken = "x";
-pub const Y_TOKEN: CharacterToken = "y";
-pub const Z_TOKEN: CharacterToken = "z";
-pub const CAPITAL_A_TOKEN: CharacterToken = "A";
-pub const CAPITAL_B_TOKEN: CharacterToken = "B";
-pub const CAPITAL_C_TOKEN: CharacterToken = "C";
-pub const CAPITAL_D_TOKEN: CharacterToken = "D";
-pub const CAPITAL_E_TOKEN: CharacterToken = "E";
-pub const CAPITAL_F_TOKEN: CharacterToken = "F";
-pub const CAPITAL_G_TOKEN: CharacterToken = "G";
-pub const CAPITAL_H_TOKEN: CharacterToken = "H";
-pub const CAPITAL_I_TOKEN: CharacterToken = "I";
-pub const CAPITAL_J_TOKEN: CharacterToken = "J";
-pub const CAPITAL_K_TOKEN: CharacterToken = "K";
-pub const CAPITAL_L_TOKEN: CharacterToken = "L";
-pub const CAPITAL_M_TOKEN: CharacterToken = "M";
-pub const CAPITAL_N_TOKEN: CharacterToken = "N";
-pub const CAPITAL_O_TOKEN: CharacterToken = "O";
-pub const CAPITAL_P_TOKEN: CharacterToken = "P";
-pub const CAPITAL_Q_TOKEN: CharacterToken = "Q";
-pub const CAPITAL_R_TOKEN: CharacterToken = "R";
-pub const CAPITAL_S_TOKEN: CharacterToken = "S";
-pub const CAPITAL_T_TOKEN: CharacterToken = "T";
-pub const CAPITAL_U_TOKEN: CharacterToken = "U";
-pub const CAPITAL_V_TOKEN: CharacterToken = "V";
-pub const CAPITAL_W_TOKEN: CharacterToken = "W";
-pub const CAPITAL_X_TOKEN: CharacterToken = "X";
-pub const CAPITAL_Y_TOKEN: CharacterToken = "Y";
-pub const CAPITAL_Z_TOKEN: CharacterToken = "Z";
+pub const A: CharacterToken = "a";
+pub const B: CharacterToken = "b";
+pub const C: CharacterToken = "c";
+pub const D: CharacterToken = "d";
+pub const E: CharacterToken = "e";
+pub const F: CharacterToken = "f";
+pub const G: CharacterToken = "g";
+pub const H: CharacterToken = "h";
+pub const I: CharacterToken = "i";
+pub const J: CharacterToken = "j";
+pub const K: CharacterToken = "k";
+pub const L: CharacterToken = "l";
+pub const M: CharacterToken = "m";
+pub const N: CharacterToken = "n";
+pub const O: CharacterToken = "o";
+pub const P: CharacterToken = "p";
+pub const Q: CharacterToken = "q";
+pub const R: CharacterToken = "r";
+pub const S: CharacterToken = "s";
+pub const T: CharacterToken = "t";
+pub const U: CharacterToken = "u";
+pub const V: CharacterToken = "v";
+pub const W: CharacterToken = "w";
+pub const X: CharacterToken = "x";
+pub const Y: CharacterToken = "y";
+pub const Z: CharacterToken = "z";
+pub const CAPITAL_A: CharacterToken = "A";
+pub const CAPITAL_B: CharacterToken = "B";
+pub const CAPITAL_C: CharacterToken = "C";
+pub const CAPITAL_D: CharacterToken = "D";
+pub const CAPITAL_E: CharacterToken = "E";
+pub const CAPITAL_F: CharacterToken = "F";
+pub const CAPITAL_G: CharacterToken = "G";
+pub const CAPITAL_H: CharacterToken = "H";
+pub const CAPITAL_I: CharacterToken = "I";
+pub const CAPITAL_J: CharacterToken = "J";
+pub const CAPITAL_K: CharacterToken = "K";
+pub const CAPITAL_L: CharacterToken = "L";
+pub const CAPITAL_M: CharacterToken = "M";
+pub const CAPITAL_N: CharacterToken = "N";
+pub const CAPITAL_O: CharacterToken = "O";
+pub const CAPITAL_P: CharacterToken = "P";
+pub const CAPITAL_Q: CharacterToken = "Q";
+pub const CAPITAL_R: CharacterToken = "R";
+pub const CAPITAL_S: CharacterToken = "S";
+pub const CAPITAL_T: CharacterToken = "T";
+pub const CAPITAL_U: CharacterToken = "U";
+pub const CAPITAL_V: CharacterToken = "V";
+pub const CAPITAL_W: CharacterToken = "W";
+pub const CAPITAL_X: CharacterToken = "X";
+pub const CAPITAL_Y: CharacterToken = "Y";
+pub const CAPITAL_Z: CharacterToken = "Z";
 
 // Character Token Vector
 pub fn characters_vector() -> Vec<CharacterToken> {
     let characters: Vec<CharacterToken> = Vec::from([
-        A_TOKEN,
-        B_TOKEN,
-        C_TOKEN,
-        D_TOKEN,
-        E_TOKEN,
-        F_TOKEN,
-        G_TOKEN,
-        H_TOKEN,
-        I_TOKEN,
-        J_TOKEN,
-        K_TOKEN,
-        L_TOKEN,
-        M_TOKEN,
-        N_TOKEN,
-        O_TOKEN,
-        P_TOKEN,
-        Q_TOKEN,
-        R_TOKEN,
-        S_TOKEN,
-        T_TOKEN,
-        U_TOKEN,
-        V_TOKEN,
-        W_TOKEN,
-        X_TOKEN,
-        Y_TOKEN,
-        Z_TOKEN,
-        CAPITAL_A_TOKEN,
-        CAPITAL_B_TOKEN,
-        CAPITAL_C_TOKEN,
-        CAPITAL_D_TOKEN,
-        CAPITAL_E_TOKEN,
-        CAPITAL_F_TOKEN,
-        CAPITAL_G_TOKEN,
-        CAPITAL_H_TOKEN,
-        CAPITAL_I_TOKEN,
-        CAPITAL_J_TOKEN,
-        CAPITAL_K_TOKEN,
-        CAPITAL_L_TOKEN,
-        CAPITAL_M_TOKEN,
-        CAPITAL_N_TOKEN,
-        CAPITAL_O_TOKEN,
-        CAPITAL_P_TOKEN,
-        CAPITAL_Q_TOKEN,
-        CAPITAL_R_TOKEN,
-        CAPITAL_S_TOKEN,
-        CAPITAL_T_TOKEN,
-        CAPITAL_U_TOKEN,
-        CAPITAL_V_TOKEN,
-        CAPITAL_W_TOKEN,
-        CAPITAL_X_TOKEN,
-        CAPITAL_Y_TOKEN,
-        CAPITAL_Z_TOKEN,
+        A,
+        B,
+        C,
+        D,
+        E,
+        F,
+        G,
+        H,
+        I,
+        J,
+        K,
+        L,
+        M,
+        N,
+        O,
+        P,
+        Q,
+        R,
+        S,
+        T,
+        U,
+        V,
+        W,
+        X,
+        Y,
+        Z,
+        CAPITAL_A,
+        CAPITAL_B,
+        CAPITAL_C,
+        CAPITAL_D,
+        CAPITAL_E,
+        CAPITAL_F,
+        CAPITAL_G,
+        CAPITAL_H,
+        CAPITAL_I,
+        CAPITAL_J,
+        CAPITAL_K,
+        CAPITAL_L,
+        CAPITAL_M,
+        CAPITAL_N,
+        CAPITAL_O,
+        CAPITAL_P,
+        CAPITAL_Q,
+        CAPITAL_R,
+        CAPITAL_S,
+        CAPITAL_T,
+        CAPITAL_U,
+        CAPITAL_V,
+        CAPITAL_W,
+        CAPITAL_X,
+        CAPITAL_Y,
+        CAPITAL_Z,
     ]);
 
     return characters;

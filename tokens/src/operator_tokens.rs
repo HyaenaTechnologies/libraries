@@ -6,7 +6,6 @@ pub type OperatorToken = &'static str;
 // Operator Tokens
 pub const ADDITION: OperatorToken = "+";
 pub const ADDITION_ASSIGNMENT: OperatorToken = "+=";
-pub const AND: OperatorToken = "&";
 pub const ANNOTATION: OperatorToken = "@";
 pub const ASSIGNMENT: OperatorToken = "=";
 pub const BITWISE_SHIFT_LEFT: OperatorToken = "<<";
@@ -31,14 +30,15 @@ pub const LAMBDA: OperatorToken = "=>";
 pub const LEFT_ARROW: OperatorToken = "<-";
 pub const LESS_THAN: OperatorToken = "<";
 pub const LESS_OR_EQUAL: OperatorToken = "<=";
+pub const LOGICAL_CONJUCTION: OperatorToken = "&";
+pub const LOGICAL_DISJUNCTION: OperatorToken = "|";
 pub const MODULUS: OperatorToken = "%";
 pub const MODULUS_ASSIGNMENT: OperatorToken = "%=";
 pub const MULTIPLICATION: OperatorToken = "*";
 pub const MULTIPLICATION_ASSIGNMENT: OperatorToken = "*=";
-pub const NOT: OperatorToken = "!";
+pub const NEGATION: OperatorToken = "!";
 pub const NOT_EQUAL: OperatorToken = "!=";
 pub const NULL_COALESCING: OperatorToken = "?";
-pub const OR: OperatorToken = "|";
 pub const PATH_SEPARATOR: OperatorToken = "::";
 pub const RANGE: OperatorToken = "..";
 pub const RETURN_TYPE: OperatorToken = "->";
@@ -54,7 +54,6 @@ pub fn operators_vector() -> Vec<OperatorToken> {
     let operators: Vec<OperatorToken> = Vec::from([
         ADDITION,
         ADDITION_ASSIGNMENT,
-        AND,
         ANNOTATION,
         ASSIGNMENT,
         BITWISE_SHIFT_LEFT,
@@ -79,14 +78,15 @@ pub fn operators_vector() -> Vec<OperatorToken> {
         LEFT_ARROW,
         LESS_THAN,
         LESS_OR_EQUAL,
+        LOGICAL_CONJUCTION,
+        LOGICAL_DISJUNCTION,
         MODULUS,
         MODULUS_ASSIGNMENT,
         MULTIPLICATION,
         MULTIPLICATION_ASSIGNMENT,
-        NOT,
+        NEGATION,
         NOT_EQUAL,
         NULL_COALESCING,
-        OR,
         PATH_SEPARATOR,
         RANGE,
         RETURN_TYPE,

@@ -4,114 +4,114 @@ use std::{primitive::str, vec::Vec};
 pub type CharacterToken = &'static str;
 
 // Character Tokens
-pub const A: CharacterToken = "a";
-pub const B: CharacterToken = "b";
-pub const C: CharacterToken = "c";
-pub const D: CharacterToken = "d";
-pub const E: CharacterToken = "e";
-pub const F: CharacterToken = "f";
-pub const G: CharacterToken = "g";
-pub const H: CharacterToken = "h";
-pub const I: CharacterToken = "i";
-pub const J: CharacterToken = "j";
-pub const K: CharacterToken = "k";
-pub const L: CharacterToken = "l";
-pub const M: CharacterToken = "m";
-pub const N: CharacterToken = "n";
-pub const O: CharacterToken = "o";
-pub const P: CharacterToken = "p";
-pub const Q: CharacterToken = "q";
-pub const R: CharacterToken = "r";
-pub const S: CharacterToken = "s";
-pub const T: CharacterToken = "t";
-pub const U: CharacterToken = "u";
-pub const V: CharacterToken = "v";
-pub const W: CharacterToken = "w";
-pub const X: CharacterToken = "x";
-pub const Y: CharacterToken = "y";
-pub const Z: CharacterToken = "z";
-pub const CAPITAL_A: CharacterToken = "A";
-pub const CAPITAL_B: CharacterToken = "B";
-pub const CAPITAL_C: CharacterToken = "C";
-pub const CAPITAL_D: CharacterToken = "D";
-pub const CAPITAL_E: CharacterToken = "E";
-pub const CAPITAL_F: CharacterToken = "F";
-pub const CAPITAL_G: CharacterToken = "G";
-pub const CAPITAL_H: CharacterToken = "H";
-pub const CAPITAL_I: CharacterToken = "I";
-pub const CAPITAL_J: CharacterToken = "J";
-pub const CAPITAL_K: CharacterToken = "K";
-pub const CAPITAL_L: CharacterToken = "L";
-pub const CAPITAL_M: CharacterToken = "M";
-pub const CAPITAL_N: CharacterToken = "N";
-pub const CAPITAL_O: CharacterToken = "O";
-pub const CAPITAL_P: CharacterToken = "P";
-pub const CAPITAL_Q: CharacterToken = "Q";
-pub const CAPITAL_R: CharacterToken = "R";
-pub const CAPITAL_S: CharacterToken = "S";
-pub const CAPITAL_T: CharacterToken = "T";
-pub const CAPITAL_U: CharacterToken = "U";
-pub const CAPITAL_V: CharacterToken = "V";
-pub const CAPITAL_W: CharacterToken = "W";
-pub const CAPITAL_X: CharacterToken = "X";
-pub const CAPITAL_Y: CharacterToken = "Y";
-pub const CAPITAL_Z: CharacterToken = "Z";
+pub const LOWER_CASE_A: CharacterToken = "a";
+pub const LOWER_CASE_B: CharacterToken = "b";
+pub const LOWER_CASE_C: CharacterToken = "c";
+pub const LOWER_CASE_D: CharacterToken = "d";
+pub const LOWER_CASE_E: CharacterToken = "e";
+pub const LOWER_CASE_F: CharacterToken = "f";
+pub const LOWER_CASE_G: CharacterToken = "g";
+pub const LOWER_CASE_H: CharacterToken = "h";
+pub const LOWER_CASE_I: CharacterToken = "i";
+pub const LOWER_CASE_J: CharacterToken = "j";
+pub const LOWER_CASE_K: CharacterToken = "k";
+pub const LOWER_CASE_L: CharacterToken = "l";
+pub const LOWER_CASE_M: CharacterToken = "m";
+pub const LOWER_CASE_N: CharacterToken = "n";
+pub const LOWER_CASE_O: CharacterToken = "o";
+pub const LOWER_CASE_P: CharacterToken = "p";
+pub const LOWER_CASE_Q: CharacterToken = "q";
+pub const LOWER_CASE_R: CharacterToken = "r";
+pub const LOWER_CASE_S: CharacterToken = "s";
+pub const LOWER_CASE_T: CharacterToken = "t";
+pub const LOWER_CASE_U: CharacterToken = "u";
+pub const LOWER_CASE_V: CharacterToken = "v";
+pub const LOWER_CASE_W: CharacterToken = "w";
+pub const LOWER_CASE_X: CharacterToken = "x";
+pub const LOWER_CASE_Y: CharacterToken = "y";
+pub const LOWER_CASE_Z: CharacterToken = "z";
+pub const UPPER_CASE_A: CharacterToken = "A";
+pub const UPPER_CASE_B: CharacterToken = "B";
+pub const UPPER_CASE_C: CharacterToken = "C";
+pub const UPPER_CASE_D: CharacterToken = "D";
+pub const UPPER_CASE_E: CharacterToken = "E";
+pub const UPPER_CASE_F: CharacterToken = "F";
+pub const UPPER_CASE_G: CharacterToken = "G";
+pub const UPPER_CASE_H: CharacterToken = "H";
+pub const UPPER_CASE_I: CharacterToken = "I";
+pub const UPPER_CASE_J: CharacterToken = "J";
+pub const UPPER_CASE_K: CharacterToken = "K";
+pub const UPPER_CASE_L: CharacterToken = "L";
+pub const UPPER_CASE_M: CharacterToken = "M";
+pub const UPPER_CASE_N: CharacterToken = "N";
+pub const UPPER_CASE_O: CharacterToken = "O";
+pub const UPPER_CASE_P: CharacterToken = "P";
+pub const UPPER_CASE_Q: CharacterToken = "Q";
+pub const UPPER_CASE_R: CharacterToken = "R";
+pub const UPPER_CASE_S: CharacterToken = "S";
+pub const UPPER_CASE_T: CharacterToken = "T";
+pub const UPPER_CASE_U: CharacterToken = "U";
+pub const UPPER_CASE_V: CharacterToken = "V";
+pub const UPPER_CASE_W: CharacterToken = "W";
+pub const UPPER_CASE_X: CharacterToken = "X";
+pub const UPPER_CASE_Y: CharacterToken = "Y";
+pub const UPPER_CASE_Z: CharacterToken = "Z";
 
 // Character Token Vector
 pub fn characters_vector() -> Vec<CharacterToken> {
     let characters: Vec<CharacterToken> = Vec::from([
-        A,
-        B,
-        C,
-        D,
-        E,
-        F,
-        G,
-        H,
-        I,
-        J,
-        K,
-        L,
-        M,
-        N,
-        O,
-        P,
-        Q,
-        R,
-        S,
-        T,
-        U,
-        V,
-        W,
-        X,
-        Y,
-        Z,
-        CAPITAL_A,
-        CAPITAL_B,
-        CAPITAL_C,
-        CAPITAL_D,
-        CAPITAL_E,
-        CAPITAL_F,
-        CAPITAL_G,
-        CAPITAL_H,
-        CAPITAL_I,
-        CAPITAL_J,
-        CAPITAL_K,
-        CAPITAL_L,
-        CAPITAL_M,
-        CAPITAL_N,
-        CAPITAL_O,
-        CAPITAL_P,
-        CAPITAL_Q,
-        CAPITAL_R,
-        CAPITAL_S,
-        CAPITAL_T,
-        CAPITAL_U,
-        CAPITAL_V,
-        CAPITAL_W,
-        CAPITAL_X,
-        CAPITAL_Y,
-        CAPITAL_Z,
+        LOWER_CASE_A,
+        LOWER_CASE_B,
+        LOWER_CASE_C,
+        LOWER_CASE_D,
+        LOWER_CASE_E,
+        LOWER_CASE_F,
+        LOWER_CASE_G,
+        LOWER_CASE_H,
+        LOWER_CASE_I,
+        LOWER_CASE_J,
+        LOWER_CASE_K,
+        LOWER_CASE_L,
+        LOWER_CASE_M,
+        LOWER_CASE_N,
+        LOWER_CASE_O,
+        LOWER_CASE_P,
+        LOWER_CASE_Q,
+        LOWER_CASE_R,
+        LOWER_CASE_S,
+        LOWER_CASE_T,
+        LOWER_CASE_U,
+        LOWER_CASE_V,
+        LOWER_CASE_W,
+        LOWER_CASE_X,
+        LOWER_CASE_Y,
+        LOWER_CASE_Z,
+        UPPER_CASE_A,
+        UPPER_CASE_B,
+        UPPER_CASE_C,
+        UPPER_CASE_D,
+        UPPER_CASE_E,
+        UPPER_CASE_F,
+        UPPER_CASE_G,
+        UPPER_CASE_H,
+        UPPER_CASE_I,
+        UPPER_CASE_J,
+        UPPER_CASE_K,
+        UPPER_CASE_L,
+        UPPER_CASE_M,
+        UPPER_CASE_N,
+        UPPER_CASE_O,
+        UPPER_CASE_P,
+        UPPER_CASE_Q,
+        UPPER_CASE_R,
+        UPPER_CASE_S,
+        UPPER_CASE_T,
+        UPPER_CASE_U,
+        UPPER_CASE_V,
+        UPPER_CASE_W,
+        UPPER_CASE_X,
+        UPPER_CASE_Y,
+        UPPER_CASE_Z,
     ]);
 
     return characters;

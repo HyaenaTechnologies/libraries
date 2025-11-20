@@ -11,6 +11,7 @@ pub const INNER_BLOCK: CommentToken = "/*!";
 pub const OUTER_LINE: CommentToken = "///";
 pub const OUTER_BLOCK: CommentToken = "/**";
 pub const OCTOTHORPE_BLOCK: CommentToken = "#*";
+pub const OCTOTHORPE_LINE: CommentToken = "#";
 pub const OCTOTHROPE_INNER_LINE: CommentToken = "#!";
 pub const OCTOTHORPE_INNER_BLOCK: CommentToken = "#*!";
 pub const OCTOTHROPE_OUTER_LINE: CommentToken = "###";
@@ -26,6 +27,7 @@ pub fn comments_vector() -> Vec<CommentToken> {
         OUTER_LINE,
         OUTER_BLOCK,
         OCTOTHORPE_BLOCK,
+        OCTOTHORPE_LINE,
         OCTOTHROPE_INNER_LINE,
         OCTOTHORPE_INNER_BLOCK,
         OCTOTHROPE_OUTER_LINE,

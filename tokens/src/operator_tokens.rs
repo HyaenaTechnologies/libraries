@@ -1,4 +1,7 @@
-use std::{primitive::{str, char}, vec::Vec};
+use std::{
+    primitive::{char, str},
+    vec::Vec,
+};
 
 // Character Operator Token Defintion
 pub type CharacterOperatorToken = char;
@@ -22,6 +25,7 @@ pub const MODULUS: CharacterOperatorToken = '%';
 pub const MULTIPLICATION: CharacterOperatorToken = '*';
 pub const NEGATION: CharacterOperatorToken = '!';
 pub const NULL_COALESCING: CharacterOperatorToken = '?';
+pub const OCTOTHORPE: CharacterOperatorToken = '#';
 pub const SEMI_COLON: CharacterOperatorToken = ';';
 pub const SUBTRACTION: CharacterOperatorToken = '-';
 pub const TILDE: CharacterOperatorToken = '~';
@@ -75,10 +79,11 @@ pub fn character_operators_vector() -> Vec<CharacterOperatorToken> {
         MULTIPLICATION,
         NEGATION,
         NULL_COALESCING,
+        OCTOTHORPE,
         SEMI_COLON,
         SUBTRACTION,
         TILDE,
-        UNDERSCORE
+        UNDERSCORE,
     ]);
 
     return operators;
@@ -108,7 +113,7 @@ pub fn string_operators_vector() -> Vec<StringOperatorToken> {
         RANGE,
         RETURN_TYPE,
         SUBTRACTION_ASSIGNMENT,
-        VARIADIC_RANGE
+        VARIADIC_RANGE,
     ]);
 
     return operators;

@@ -36,10 +36,10 @@ pub const MODULUS: OperatorToken = "%";
 pub const MODULUS_ASSIGNMENT: OperatorToken = "%=";
 pub const MULTIPLICATION: OperatorToken = "*";
 pub const MULTIPLICATION_ASSIGNMENT: OperatorToken = "*=";
-pub const NOT: OperatorToken = "!";
+pub const NEGATION: OperatorToken = "!";
 pub const NOT_EQUAL: OperatorToken = "!=";
-pub const OCTOTHORPE: OperatorToken = "#";
 pub const NULL_COALESCING: OperatorToken = "?";
+pub const OCTOTHORPE: OperatorToken = "#";
 pub const PATH_SEPARATOR: OperatorToken = "::";
 pub const RANGE: OperatorToken = "..";
 pub const RETURN_TYPE: OperatorToken = "->";
@@ -85,7 +85,7 @@ pub fn operators_vector() -> Vec<OperatorToken> {
         MODULUS_ASSIGNMENT,
         MULTIPLICATION,
         MULTIPLICATION_ASSIGNMENT,
-        NOT,
+        NEGATION,
         NOT_EQUAL,
         NULL_COALESCING,
         OCTOTHORPE,

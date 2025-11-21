@@ -11,7 +11,6 @@ pub const END_OF_FILE: TokenType = "EOF";
 pub const ESCAPE: TokenType = "ESCAPE";
 pub const KEYWORD: TokenType = "KEYWORD";
 pub const NUMBER: TokenType = "NUMBER";
-pub const NULL: TokenType = "NULL";
 pub const OPERATOR: TokenType = "OPERATOR";
 
 // Token Type Vector
@@ -24,7 +23,6 @@ pub fn types_vector() -> Vec<TokenType> {
         ESCAPE,
         KEYWORD,
         NUMBER,
-        NULL,
         OPERATOR,
     ]);
 

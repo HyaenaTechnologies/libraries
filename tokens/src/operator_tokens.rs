@@ -21,9 +21,9 @@ pub const GREATER_THAN: OperatorToken  = '>';
 pub const LESS_THAN: OperatorToken  = '<';
 pub const LOGICAL_CONJUCTION: OperatorToken  = '&';
 pub const LOGICAL_DISJUNCTION: OperatorToken  = '|';
+pub const LOGICAL_NEGATION: OperatorToken  = '!';
 pub const MODULUS: OperatorToken  = '%';
 pub const MULTIPLICATION: OperatorToken  = '*';
-pub const NEGATION: OperatorToken  = '!';
 pub const NULL_COALESCING: OperatorToken  = '?';
 pub const OCTOTHORPE: OperatorToken  = '#';
 pub const SEMI_COLON: OperatorToken  = ';';
@@ -48,9 +48,9 @@ pub fn operators_vector() -> Vec<OperatorToken> {
         LESS_THAN,
         LOGICAL_CONJUCTION,
         LOGICAL_DISJUNCTION,
+        LOGICAL_NEGATION
         MODULUS,
         MULTIPLICATION,
-        NEGATION,
         NULL_COALESCING,
         OCTOTHORPE,
         SEMI_COLON,

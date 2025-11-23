@@ -2,8 +2,6 @@ pub mod character_tokens;
 
 pub mod escape_tokens;
 
-pub mod comment_tokens;
-
 pub mod delimiter_tokens;
 
 pub mod number_tokens;

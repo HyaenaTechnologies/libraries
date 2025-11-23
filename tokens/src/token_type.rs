@@ -7,7 +7,7 @@ use std::{
 pub type TokenType = &'static str;
 
 // Token Types
-pub const CHARACTER: TokenType = "CHARACTER";
+pub const ALPHABETIC: TokenType = "ALPHABETIC";
 pub const COMMENT: TokenType = "COMMENT";
 pub const DELIMITER: TokenType = "DELIMITER";
 pub const END_OF_FILE: TokenType = "EOF";
@@ -19,7 +19,7 @@ pub const OPERATOR: TokenType = "OPERATOR";
 // Token Type Vector
 pub fn types_vector() -> Vec<TokenType> {
     let token_types: Vec<TokenType> = Vec::from([
-        CHARACTER,
+        ALPHABETIC,
         COMMENT,
         DELIMITER,
         END_OF_FILE,

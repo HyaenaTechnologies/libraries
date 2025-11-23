@@ -23,7 +23,6 @@ pub const LOGICAL_CONJUCTION: OperatorToken = "&";
 pub const LOGICAL_DISJUNCTION: OperatorToken = "|";
 pub const MODULUS: OperatorToken = "%";
 pub const MULTIPLICATION: OperatorToken = "*";
-<<<<<<< Updated upstream
 pub const MULTIPLICATION_ASSIGNMENT: OperatorToken = "*=";
 pub const NEGATION: OperatorToken = "!";
 pub const NOT_EQUAL: OperatorToken = "!=";
@@ -32,11 +31,6 @@ pub const OCTOTHORPE: OperatorToken = "#";
 pub const PATH_SEPARATOR: OperatorToken = "::";
 pub const RANGE: OperatorToken = "..";
 pub const RETURN_TYPE: OperatorToken = "->";
-=======
-pub const NEGATION: OperatorToken = "!";
-pub const NULL_COALESCING: OperatorToken = "?";
-pub const OCTOTHORPE: OperatorToken = "#";
->>>>>>> Stashed changes
 pub const SEMI_COLON: OperatorToken = ";";
 pub const SUBTRACTION: OperatorToken = "-";
 pub const TILDE: OperatorToken = "~";
@@ -61,13 +55,10 @@ pub fn operators_vector() -> Vec<OperatorToken> {
         LOGICAL_DISJUNCTION,
         MODULUS,
         MULTIPLICATION,
-<<<<<<< Updated upstream
         MULTIPLICATION_ASSIGNMENT,
         NEGATION,
         NOT_EQUAL,
-=======
         NEGATION,
->>>>>>> Stashed changes
         NULL_COALESCING,
         OCTOTHORPE,
         SEMI_COLON,

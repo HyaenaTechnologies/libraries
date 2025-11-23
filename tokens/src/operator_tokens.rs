@@ -48,7 +48,7 @@ pub fn operators_vector() -> Vec<OperatorToken> {
         LESS_THAN,
         LOGICAL_CONJUCTION,
         LOGICAL_DISJUNCTION,
-        LOGICAL_NEGATION
+        LOGICAL_NEGATION,
         MODULUS,
         MULTIPLICATION,
         NULL_COALESCING,

@@ -12,7 +12,7 @@ pub const BACKSLASH: EscapeToken = '\\';
 pub const CARRIAGE_RETURN: EscapeToken = '\r';
 pub const NEW_LINE: EscapeToken = '\n';
 pub const NULL_CHARACTER: EscapeToken = '\0';
-pub const QUOTATION_MARK: EscapeToken = '\'';
+pub const QUOTATION_MARK: EscapeToken = '\"';
 pub const TAB: EscapeToken = '\t';
 
 // Escape Token Vector

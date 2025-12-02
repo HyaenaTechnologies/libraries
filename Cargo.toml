@@ -1,5 +1,5 @@
 [workspace]
-members = ["ansi-codes", "tokens"]
+members = ["ansi-codes", "syntax-tree", "tokens"]
 resolver = "2"
 
 [workspace.package]

@@ -1,11 +1,11 @@
-pub mod character_tokens;
+pub mod character_token;
 
-pub mod escape_tokens;
+pub mod escape_token;
 
-pub mod delimiter_tokens;
+pub mod delimiter_token;
 
-pub mod number_tokens;
+pub mod number_token;
 
-pub mod operator_tokens;
+pub mod operator_token;
 
 pub mod token_type;

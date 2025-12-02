@@ -1,5 +1,7 @@
 pub mod character_token;
 
+pub mod comment_token;
+
 pub mod escape_token;
 
 pub mod delimiter_token;

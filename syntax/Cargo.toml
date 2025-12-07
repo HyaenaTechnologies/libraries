@@ -6,7 +6,7 @@ include = [
   "src/**/*"
 ]
 license-file.workspace = true
-name = "syntax_tree"
+name = "syntax"
 publish = false
 readme = "README.md"
 repository.workspace = true

@@ -1,6 +1,6 @@
 [Rust Language]: https://rust-lang.org
 
-# Syntax Tree
+# Syntax
 
 Generic Syntax Tree for Parsers
 

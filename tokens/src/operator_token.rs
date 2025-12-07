@@ -3,10 +3,10 @@ use std::{
     vec::Vec,
 };
 
-// Character Operator Token Defintion
+// Operator Token Defintion
 pub type OperatorToken = char;
 
-// Character Operator Tokens
+// Operator Tokens
 pub const ADDITION: OperatorToken  = '+';
 pub const ANNOTATION: OperatorToken  = '@';
 pub const ASSIGNMENT: OperatorToken  = '=';

@@ -5,7 +5,6 @@ include = [
   "Cargo.toml",
   "src/**/*"
 ]
-license.workspace = true
 license-file.workspace = true
 name = "tokens"
 publish = false

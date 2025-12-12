@@ -1,20 +1,20 @@
 #include "number_token.h"
 
 // Number Tokens
-const NumberToken ZERO = '0';
-const NumberToken ONE = '1';
-const NumberToken TWO = '2';
-const NumberToken THREE = '3';
-const NumberToken FOUR = '4';
-const NumberToken FIVE = '5';
-const NumberToken SIX = '6';
-const NumberToken SEVEN = '7';
-const NumberToken EIGHT = '8';
-const NumberToken NINE = '9';
+const char ZERO = '0';
+const char ONE = '1';
+const char TWO = '2';
+const char THREE = '3';
+const char FOUR = '4';
+const char FIVE = '5';
+const char SIX = '6';
+const char SEVEN = '7';
+const char EIGHT = '8';
+const char NINE = '9';
 
 // Number Token Vector
-const NumberToken numbers_vector()  {
-    const NumberToken numbers[10] = {
+const char numbers_vector()  {
+    const char numbers[10] = {
         ZERO,
         ONE,
         TWO,

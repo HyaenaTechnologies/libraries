@@ -3,66 +3,63 @@ use std::{
     vec::Vec,
 };
 
-// Character Token Defintion
-pub type CharacterToken = char;
-
 // Character Tokens
-pub const LOWER_CASE_A: CharacterToken = 'a';
-pub const LOWER_CASE_B: CharacterToken = 'b';
-pub const LOWER_CASE_C: CharacterToken = 'c';
-pub const LOWER_CASE_D: CharacterToken = 'd';
-pub const LOWER_CASE_E: CharacterToken = 'e';
-pub const LOWER_CASE_F: CharacterToken = 'f';
-pub const LOWER_CASE_G: CharacterToken = 'g';
-pub const LOWER_CASE_H: CharacterToken = 'h';
-pub const LOWER_CASE_I: CharacterToken = 'i';
-pub const LOWER_CASE_J: CharacterToken = 'j';
-pub const LOWER_CASE_K: CharacterToken = 'k';
-pub const LOWER_CASE_L: CharacterToken = 'l';
-pub const LOWER_CASE_M: CharacterToken = 'm';
-pub const LOWER_CASE_N: CharacterToken = 'n';
-pub const LOWER_CASE_O: CharacterToken = 'o';
-pub const LOWER_CASE_P: CharacterToken = 'p';
-pub const LOWER_CASE_Q: CharacterToken = 'q';
-pub const LOWER_CASE_R: CharacterToken = 'r';
-pub const LOWER_CASE_S: CharacterToken = 's';
-pub const LOWER_CASE_T: CharacterToken = 't';
-pub const LOWER_CASE_U: CharacterToken = 'u';
-pub const LOWER_CASE_V: CharacterToken = 'v';
-pub const LOWER_CASE_W: CharacterToken = 'w';
-pub const LOWER_CASE_X: CharacterToken = 'x';
-pub const LOWER_CASE_Y: CharacterToken = 'y';
-pub const LOWER_CASE_Z: CharacterToken = 'z';
-pub const UPPER_CASE_A: CharacterToken = 'A';
-pub const UPPER_CASE_B: CharacterToken = 'B';
-pub const UPPER_CASE_C: CharacterToken = 'C';
-pub const UPPER_CASE_D: CharacterToken = 'D';
-pub const UPPER_CASE_E: CharacterToken = 'E';
-pub const UPPER_CASE_F: CharacterToken = 'F';
-pub const UPPER_CASE_G: CharacterToken = 'G';
-pub const UPPER_CASE_H: CharacterToken = 'H';
-pub const UPPER_CASE_I: CharacterToken = 'I';
-pub const UPPER_CASE_J: CharacterToken = 'J';
-pub const UPPER_CASE_K: CharacterToken = 'K';
-pub const UPPER_CASE_L: CharacterToken = 'L';
-pub const UPPER_CASE_M: CharacterToken = 'M';
-pub const UPPER_CASE_N: CharacterToken = 'N';
-pub const UPPER_CASE_O: CharacterToken = 'O';
-pub const UPPER_CASE_P: CharacterToken = 'P';
-pub const UPPER_CASE_Q: CharacterToken = 'Q';
-pub const UPPER_CASE_R: CharacterToken = 'R';
-pub const UPPER_CASE_S: CharacterToken = 'S';
-pub const UPPER_CASE_T: CharacterToken = 'T';
-pub const UPPER_CASE_U: CharacterToken = 'U';
-pub const UPPER_CASE_V: CharacterToken = 'V';
-pub const UPPER_CASE_W: CharacterToken = 'W';
-pub const UPPER_CASE_X: CharacterToken = 'X';
-pub const UPPER_CASE_Y: CharacterToken = 'Y';
-pub const UPPER_CASE_Z: CharacterToken = 'Z';
+pub const LOWER_CASE_A: char = 'a';
+pub const LOWER_CASE_B: char = 'b';
+pub const LOWER_CASE_C: char = 'c';
+pub const LOWER_CASE_D: char = 'd';
+pub const LOWER_CASE_E: char = 'e';
+pub const LOWER_CASE_F: char = 'f';
+pub const LOWER_CASE_G: char = 'g';
+pub const LOWER_CASE_H: char = 'h';
+pub const LOWER_CASE_I: char = 'i';
+pub const LOWER_CASE_J: char = 'j';
+pub const LOWER_CASE_K: char = 'k';
+pub const LOWER_CASE_L: char = 'l';
+pub const LOWER_CASE_M: char = 'm';
+pub const LOWER_CASE_N: char = 'n';
+pub const LOWER_CASE_O: char = 'o';
+pub const LOWER_CASE_P: char = 'p';
+pub const LOWER_CASE_Q: char = 'q';
+pub const LOWER_CASE_R: char = 'r';
+pub const LOWER_CASE_S: char = 's';
+pub const LOWER_CASE_T: char = 't';
+pub const LOWER_CASE_U: char = 'u';
+pub const LOWER_CASE_V: char = 'v';
+pub const LOWER_CASE_W: char = 'w';
+pub const LOWER_CASE_X: char = 'x';
+pub const LOWER_CASE_Y: char = 'y';
+pub const LOWER_CASE_Z: char = 'z';
+pub const UPPER_CASE_A: char = 'A';
+pub const UPPER_CASE_B: char = 'B';
+pub const UPPER_CASE_C: char = 'C';
+pub const UPPER_CASE_D: char = 'D';
+pub const UPPER_CASE_E: char = 'E';
+pub const UPPER_CASE_F: char = 'F';
+pub const UPPER_CASE_G: char = 'G';
+pub const UPPER_CASE_H: char = 'H';
+pub const UPPER_CASE_I: char = 'I';
+pub const UPPER_CASE_J: char = 'J';
+pub const UPPER_CASE_K: char = 'K';
+pub const UPPER_CASE_L: char = 'L';
+pub const UPPER_CASE_M: char = 'M';
+pub const UPPER_CASE_N: char = 'N';
+pub const UPPER_CASE_O: char = 'O';
+pub const UPPER_CASE_P: char = 'P';
+pub const UPPER_CASE_Q: char = 'Q';
+pub const UPPER_CASE_R: char = 'R';
+pub const UPPER_CASE_S: char = 'S';
+pub const UPPER_CASE_T: char = 'T';
+pub const UPPER_CASE_U: char = 'U';
+pub const UPPER_CASE_V: char = 'V';
+pub const UPPER_CASE_W: char = 'W';
+pub const UPPER_CASE_X: char = 'X';
+pub const UPPER_CASE_Y: char = 'Y';
+pub const UPPER_CASE_Z: char = 'Z';
 
 // Character Token Vector
-pub fn characters_vector() -> Vec<CharacterToken> {
-    let characters: Vec<CharacterToken> = Vec::from([
+pub fn characters_vector() -> Vec<char> {
+    let characters: Vec<char> = Vec::from([
         LOWER_CASE_A,
         LOWER_CASE_B,
         LOWER_CASE_C,

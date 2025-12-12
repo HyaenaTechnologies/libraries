@@ -1,33 +1,33 @@
 #include "operator_token.h"
 
 // Operator Tokens
-const OperatorToken ADDITION  = '+';
-const OperatorToken ANNOTATION  = '@';
-const OperatorToken ASSIGNMENT  = '=';
-const OperatorToken COLON  = ':';
-const OperatorToken COMMA  = ',';
-const OperatorToken DIVISION  = '/';
-const OperatorToken DOLLAR_SIGN  = '$';
-const OperatorToken EXCLUSIVE_OR  = '^';
-const OperatorToken FIELD_ACCESS  = '.';
-const OperatorToken GRAVE_ACCENT  = '`';
-const OperatorToken GREATER_THAN  = '>';
-const OperatorToken LESS_THAN  = '<';
-const OperatorToken LOGICAL_CONJUCTION  = '&';
-const OperatorToken LOGICAL_DISJUNCTION  = '|';
-const OperatorToken LOGICAL_NEGATION  = '!';
-const OperatorToken MODULUS  = '%';
-const OperatorToken MULTIPLICATION  = '*';
-const OperatorToken NULL_COALESCING  = '?';
-const OperatorToken OCTOTHORPE  = '#';
-const OperatorToken SEMI_COLON  = ';';
-const OperatorToken SUBTRACTION  = '-';
-const OperatorToken TILDE  = '~';
-const OperatorToken UNDERSCORE  = '_';
+const char ADDITION  = '+';
+const char ANNOTATION  = '@';
+const char ASSIGNMENT  = '=';
+const char COLON  = ':';
+const char COMMA  = ',';
+const char DIVISION  = '/';
+const char DOLLAR_SIGN  = '$';
+const char EXCLUSIVE_OR  = '^';
+const char FIELD_ACCESS  = '.';
+const char GRAVE_ACCENT  = '`';
+const char GREATER_THAN  = '>';
+const char LESS_THAN  = '<';
+const char LOGICAL_CONJUCTION  = '&';
+const char LOGICAL_DISJUNCTION  = '|';
+const char LOGICAL_NEGATION  = '!';
+const char MODULUS  = '%';
+const char MULTIPLICATION  = '*';
+const char NULL_COALESCING  = '?';
+const char OCTOTHORPE  = '#';
+const char SEMI_COLON  = ';';
+const char SUBTRACTION  = '-';
+const char TILDE  = '~';
+const char UNDERSCORE  = '_';
 
 // Operator Token Vector
-const OperatorToken operators_vector() {
-    const OperatorToken operators[23] = {
+const char operators_vector() {
+    const char operators[23] = {
         ADDITION,
         ANNOTATION,
         ASSIGNMENT,

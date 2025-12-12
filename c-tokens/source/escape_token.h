@@ -1,19 +1,16 @@
 #ifndef ESCAPE_TOKEN_H
 #define ESCAPE_TOKEN_H
 
-// Escape Token Defintion
-typedef char EscapeToken;
-
 // Escape Tokens
-extern const EscapeToken APOSTROPHE;
-extern const EscapeToken BACKSLASH;
-extern const EscapeToken CARRIAGE_RETURN;
-extern const EscapeToken NEW_LINE;
-extern const EscapeToken NULL_CHARACTER;
-extern const EscapeToken QUOTATION_MARK;
-extern const EscapeToken TAB;
+extern const char APOSTROPHE;
+extern const char BACKSLASH;
+extern const char CARRIAGE_RETURN;
+extern const char NEW_LINE;
+extern const char NULL_CHARACTER;
+extern const char QUOTATION_MARK;
+extern const char TAB;
 
 // Escape Token Vector
-const EscapeToken escapes_vector();
+const char escapes_vector();
 
 #endif

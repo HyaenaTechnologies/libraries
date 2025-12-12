@@ -1,22 +1,19 @@
 #ifndef NUMBER_TOKEN_H
 #define NUMBER_TOKEN_H
 
-// Number Token Defintion
-typedef char NumberToken;
-
 // Number Tokens
-extern const NumberToken ZERO;
-extern const NumberToken ONE;
-extern const NumberToken TWO;
-extern const NumberToken THREE;
-extern const NumberToken FOUR;
-extern const NumberToken FIVE;
-extern const NumberToken SIX;
-extern const NumberToken SEVEN;
-extern const NumberToken EIGHT;
-extern const NumberToken NINE;
+extern const char ZERO;
+extern const char ONE;
+extern const char TWO;
+extern const char THREE;
+extern const char FOUR;
+extern const char FIVE;
+extern const char SIX;
+extern const char SEVEN;
+extern const char EIGHT;
+extern const char NINE;
 
 // Number Token Vector
-const NumberToken numbers_vector();
+const char numbers_vector();
 
 #endif

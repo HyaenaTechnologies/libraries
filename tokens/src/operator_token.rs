@@ -3,37 +3,34 @@ use std::{
     vec::Vec,
 };
 
-// Operator Token Defintion
-pub type OperatorToken = char;
-
 // Operator Tokens
-pub const ADDITION: OperatorToken  = '+';
-pub const ANNOTATION: OperatorToken  = '@';
-pub const ASSIGNMENT: OperatorToken  = '=';
-pub const COLON: OperatorToken  = ':';
-pub const COMMA: OperatorToken  = ',';
-pub const DIVISION: OperatorToken  = '/';
-pub const DOLLAR_SIGN: OperatorToken  = '$';
-pub const EXCLUSIVE_OR: OperatorToken  = '^';
-pub const FIELD_ACCESS: OperatorToken  = '.';
-pub const GRAVE_ACCENT: OperatorToken  = '`';
-pub const GREATER_THAN: OperatorToken  = '>';
-pub const LESS_THAN: OperatorToken  = '<';
-pub const LOGICAL_CONJUCTION: OperatorToken  = '&';
-pub const LOGICAL_DISJUNCTION: OperatorToken  = '|';
-pub const LOGICAL_NEGATION: OperatorToken  = '!';
-pub const MODULUS: OperatorToken  = '%';
-pub const MULTIPLICATION: OperatorToken  = '*';
-pub const NULL_COALESCING: OperatorToken  = '?';
-pub const OCTOTHORPE: OperatorToken  = '#';
-pub const SEMI_COLON: OperatorToken  = ';';
-pub const SUBTRACTION: OperatorToken  = '-';
-pub const TILDE: OperatorToken  = '~';
-pub const UNDERSCORE: OperatorToken  = '_';
+pub const ADDITION: char  = '+';
+pub const ANNOTATION: char  = '@';
+pub const ASSIGNMENT: char  = '=';
+pub const COLON: char  = ':';
+pub const COMMA: char  = ',';
+pub const DIVISION: char  = '/';
+pub const DOLLAR_SIGN: char  = '$';
+pub const EXCLUSIVE_OR: char  = '^';
+pub const FIELD_ACCESS: char  = '.';
+pub const GRAVE_ACCENT: char  = '`';
+pub const GREATER_THAN: char  = '>';
+pub const LESS_THAN: char  = '<';
+pub const LOGICAL_CONJUCTION: char  = '&';
+pub const LOGICAL_DISJUNCTION: char  = '|';
+pub const LOGICAL_NEGATION: char  = '!';
+pub const MODULUS: char  = '%';
+pub const MULTIPLICATION: char  = '*';
+pub const NULL_COALESCING: char  = '?';
+pub const OCTOTHORPE: char  = '#';
+pub const SEMI_COLON: char  = ';';
+pub const SUBTRACTION: char  = '-';
+pub const TILDE: char  = '~';
+pub const UNDERSCORE: char  = '_';
 
 // Operator Token Vector
-pub fn operators_vector() -> Vec<OperatorToken> {
-    let operators: Vec<OperatorToken> = Vec::from([
+pub fn operators_vector() -> Vec<char> {
+    let operators: Vec<char> = Vec::from([
         ADDITION,
         ANNOTATION,
         ASSIGNMENT,

@@ -3,22 +3,19 @@ use std::{
     vec::Vec,
 };
 
-// Token Type Defintion
-pub type TokenType = &'static str;
-
 // Token Types
-pub const ALPHABETIC: TokenType = "ALPHABETIC";
-pub const COMMENT: TokenType = "COMMENT";
-pub const DELIMITER: TokenType = "DELIMITER";
-pub const END_OF_FILE: TokenType = "EOF";
-pub const ESCAPE: TokenType = "ESCAPE";
-pub const KEYWORD: TokenType = "KEYWORD";
-pub const NUMBER: TokenType = "NUMBER";
-pub const OPERATOR: TokenType = "OPERATOR";
+pub const ALPHABETIC: &'static str = "ALPHABETIC";
+pub const COMMENT: &'static str = "COMMENT";
+pub const DELIMITER: &'static str = "DELIMITER";
+pub const END_OF_FILE: &'static str = "EOF";
+pub const ESCAPE: &'static str = "ESCAPE";
+pub const KEYWORD: &'static str = "KEYWORD";
+pub const NUMBER: &'static str = "NUMBER";
+pub const OPERATOR: &'static str = "OPERATOR";
 
 // Token Type Vector
-pub fn types_vector() -> Vec<TokenType> {
-    let token_types: Vec<TokenType> = Vec::from([
+pub fn types_vector() -> Vec<&'static str> {
+    let token_types: Vec<&'static str> = Vec::from([
         ALPHABETIC,
         COMMENT,
         DELIMITER,

@@ -1,25 +1,22 @@
 use std::{primitive::str, vec::Vec};
 
-// Comment Token Defintion
-pub type CommentToken = &'static str;
-
 // Comment Tokens
-pub const BLOCK: CommentToken = "/*";
-pub const LINE: CommentToken = "//";
-pub const INNER_LINE: CommentToken = "//!";
-pub const INNER_BLOCK: CommentToken = "/*!";
-pub const OUTER_LINE: CommentToken = "///";
-pub const OUTER_BLOCK: CommentToken = "/**";
-pub const OCTOTHORPE_BLOCK: CommentToken = "#*";
-pub const OCTOTHORPE_LINE: CommentToken = "##";
-pub const OCTOTHROPE_INNER_LINE: CommentToken = "#!";
-pub const OCTOTHORPE_INNER_BLOCK: CommentToken = "#*!";
-pub const OCTOTHROPE_OUTER_LINE: CommentToken = "###";
-pub const OCTOTHORPE_OUTER_BLOCK: CommentToken = "#**";
+pub const BLOCK: &'static str = "/*";
+pub const LINE: &'static str = "//";
+pub const INNER_LINE: &'static str = "//!";
+pub const INNER_BLOCK: &'static str = "/*!";
+pub const OUTER_LINE: &'static str = "///";
+pub const OUTER_BLOCK: &'static str = "/**";
+pub const OCTOTHORPE_BLOCK: &'static str = "#*";
+pub const OCTOTHORPE_LINE: &'static str = "##";
+pub const OCTOTHROPE_INNER_LINE: &'static str = "#!";
+pub const OCTOTHORPE_INNER_BLOCK: &'static str = "#*!";
+pub const OCTOTHROPE_OUTER_LINE: &'static str = "###";
+pub const OCTOTHORPE_OUTER_BLOCK: &'static str = "#**";
 
 // Comment Token Vector
-pub fn comments_vector() -> Vec<CommentToken> {
-    let comments: Vec<CommentToken> = Vec::from([
+pub fn comments_vector() -> Vec<&'static str> {
+    let comments: Vec<&'static str> = Vec::from([
         BLOCK,
         LINE,
         INNER_LINE,

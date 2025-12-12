@@ -1,62 +1,62 @@
 #include "./character_token.h"
 
 // Character Tokens
-const CharacterToken LOWER_CASE_A = 'a';
-const CharacterToken LOWER_CASE_B = 'b';
-const CharacterToken LOWER_CASE_C = 'c';
-const CharacterToken LOWER_CASE_D = 'd';
-const CharacterToken LOWER_CASE_E = 'e';
-const CharacterToken LOWER_CASE_F = 'f';
-const CharacterToken LOWER_CASE_G = 'g';
-const CharacterToken LOWER_CASE_H = 'h';
-const CharacterToken LOWER_CASE_I = 'i';
-const CharacterToken LOWER_CASE_J = 'j';
-const CharacterToken LOWER_CASE_K = 'k';
-const CharacterToken LOWER_CASE_L = 'l';
-const CharacterToken LOWER_CASE_M = 'm';
-const CharacterToken LOWER_CASE_N = 'n';
-const CharacterToken LOWER_CASE_O = 'o';
-const CharacterToken LOWER_CASE_P = 'p';
-const CharacterToken LOWER_CASE_Q = 'q';
-const CharacterToken LOWER_CASE_R = 'r';
-const CharacterToken LOWER_CASE_S = 's';
-const CharacterToken LOWER_CASE_T = 't';
-const CharacterToken LOWER_CASE_U = 'u';
-const CharacterToken LOWER_CASE_V = 'v';
-const CharacterToken LOWER_CASE_W = 'w';
-const CharacterToken LOWER_CASE_X = 'x';
-const CharacterToken LOWER_CASE_Y = 'y';
-const CharacterToken LOWER_CASE_Z = 'z';
-const CharacterToken UPPER_CASE_A = 'A';
-const CharacterToken UPPER_CASE_B = 'B';
-const CharacterToken UPPER_CASE_C = 'C';
-const CharacterToken UPPER_CASE_D = 'D';
-const CharacterToken UPPER_CASE_E = 'E';
-const CharacterToken UPPER_CASE_F = 'F';
-const CharacterToken UPPER_CASE_G = 'G';
-const CharacterToken UPPER_CASE_H = 'H';
-const CharacterToken UPPER_CASE_I = 'I';
-const CharacterToken UPPER_CASE_J = 'J';
-const CharacterToken UPPER_CASE_K = 'K';
-const CharacterToken UPPER_CASE_L = 'L';
-const CharacterToken UPPER_CASE_M = 'M';
-const CharacterToken UPPER_CASE_N = 'N';
-const CharacterToken UPPER_CASE_O = 'O';
-const CharacterToken UPPER_CASE_P = 'P';
-const CharacterToken UPPER_CASE_Q = 'Q';
-const CharacterToken UPPER_CASE_R = 'R';
-const CharacterToken UPPER_CASE_S = 'S';
-const CharacterToken UPPER_CASE_T = 'T';
-const CharacterToken UPPER_CASE_U = 'U';
-const CharacterToken UPPER_CASE_V = 'V';
-const CharacterToken UPPER_CASE_W = 'W';
-const CharacterToken UPPER_CASE_X = 'X';
-const CharacterToken UPPER_CASE_Y = 'Y';
-const CharacterToken UPPER_CASE_Z = 'Z';
+const char LOWER_CASE_A = 'a';
+const char LOWER_CASE_B = 'b';
+const char LOWER_CASE_C = 'c';
+const char LOWER_CASE_D = 'd';
+const char LOWER_CASE_E = 'e';
+const char LOWER_CASE_F = 'f';
+const char LOWER_CASE_G = 'g';
+const char LOWER_CASE_H = 'h';
+const char LOWER_CASE_I = 'i';
+const char LOWER_CASE_J = 'j';
+const char LOWER_CASE_K = 'k';
+const char LOWER_CASE_L = 'l';
+const char LOWER_CASE_M = 'm';
+const char LOWER_CASE_N = 'n';
+const char LOWER_CASE_O = 'o';
+const char LOWER_CASE_P = 'p';
+const char LOWER_CASE_Q = 'q';
+const char LOWER_CASE_R = 'r';
+const char LOWER_CASE_S = 's';
+const char LOWER_CASE_T = 't';
+const char LOWER_CASE_U = 'u';
+const char LOWER_CASE_V = 'v';
+const char LOWER_CASE_W = 'w';
+const char LOWER_CASE_X = 'x';
+const char LOWER_CASE_Y = 'y';
+const char LOWER_CASE_Z = 'z';
+const char UPPER_CASE_A = 'A';
+const char UPPER_CASE_B = 'B';
+const char UPPER_CASE_C = 'C';
+const char UPPER_CASE_D = 'D';
+const char UPPER_CASE_E = 'E';
+const char UPPER_CASE_F = 'F';
+const char UPPER_CASE_G = 'G';
+const char UPPER_CASE_H = 'H';
+const char UPPER_CASE_I = 'I';
+const char UPPER_CASE_J = 'J';
+const char UPPER_CASE_K = 'K';
+const char UPPER_CASE_L = 'L';
+const char UPPER_CASE_M = 'M';
+const char UPPER_CASE_N = 'N';
+const char UPPER_CASE_O = 'O';
+const char UPPER_CASE_P = 'P';
+const char UPPER_CASE_Q = 'Q';
+const char UPPER_CASE_R = 'R';
+const char UPPER_CASE_S = 'S';
+const char UPPER_CASE_T = 'T';
+const char UPPER_CASE_U = 'U';
+const char UPPER_CASE_V = 'V';
+const char UPPER_CASE_W = 'W';
+const char UPPER_CASE_X = 'X';
+const char UPPER_CASE_Y = 'Y';
+const char UPPER_CASE_Z = 'Z';
 
 // Character Token Vector
-const CharacterToken characters_vector() {
-    const CharacterToken characters[52] = {
+const char characters_vector() {
+    const char characters[52] = {
         LOWER_CASE_A,
         LOWER_CASE_B,
         LOWER_CASE_C,

@@ -7,7 +7,7 @@ name = "ansi_codes"
 version = "0.1.0"
 
 [[package]]
-name = "syntax_tree"
+name = "syntax"
 version = "0.1.0"
 
 [[package]]

@@ -3,20 +3,17 @@ use std::{
     vec::Vec,
 };
 
-// Delimiter Token Defintion
-pub type DelimiterToken = char;
-
 // Delimiter Tokens
-pub const LEFT_BRACKET: DelimiterToken = '{';
-pub const LEFT_PARENTHESIS: DelimiterToken = '(';
-pub const LEFT_SQUARE_BRACKET: DelimiterToken = '[';
-pub const RIGHT_BRACKET: DelimiterToken = '}';
-pub const RIGHT_PARENTHESIS: DelimiterToken = ')';
-pub const RIGHT_SQUARE_BRACKET: DelimiterToken = ']';
+pub const LEFT_BRACKET: char = '{';
+pub const LEFT_PARENTHESIS: char = '(';
+pub const LEFT_SQUARE_BRACKET: char = '[';
+pub const RIGHT_BRACKET: char = '}';
+pub const RIGHT_PARENTHESIS: char = ')';
+pub const RIGHT_SQUARE_BRACKET: char = ']';
 
 // Delimiter Token Vector
-pub fn delimiters_vector() -> Vec<DelimiterToken> {
-    let delimiters: Vec<DelimiterToken> = Vec::from([
+pub fn delimiters_vector() -> Vec<char> {
+    let delimiters: Vec<char> = Vec::from([
         LEFT_BRACKET,
         LEFT_PARENTHESIS,
         LEFT_SQUARE_BRACKET,

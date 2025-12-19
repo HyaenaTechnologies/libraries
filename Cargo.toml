@@ -1,0 +1,18 @@
+[workspace]
+members = ["ansi-codes", "syntax", "tokens"]
+resolver = "2"
+
+[workspace.package]
+description = "Hyena Technologies Libraries"
+edition = "2024"
+include = [
+  "Cargo.toml",
+  "src/**/*"
+]
+license-file = "LICENSE.md"
+name = "libraries"
+publish = false
+readme = "README.md"
+repository = "https://github.com/HyaenaTechnologies/libraries"
+rust-version = "1.91.1"
+

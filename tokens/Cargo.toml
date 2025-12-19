@@ -1,0 +1,18 @@
+[package]
+description = "Tokens and Token Types for Tokenizers"
+edition.workspace = true
+include = [
+  "Cargo.toml",
+  "src/**/*"
+]
+license-file.workspace = true
+name = "tokens"
+publish = false
+readme = "README.md"
+repository.workspace = true
+rust-version.workspace = true
+version = "0.1.0"
+
+[lib]
+path = "src/lib.rs"
+

@@ -1,0 +1,27 @@
+#include "token_type.h"
+
+// Token Types
+const char ALPHABETIC[11] = "ALPHABETIC";
+const char COMMENT[8] = "COMMENT";
+const char DELIMITER[10] = "DELIMITER";
+const char END_OF_FILE[4] = "EOF";
+const char ESCAPE[7] = "ESCAPE";
+const char KEYWORD[8] = "KEYWORD";
+const char NUMBER[7] = "NUMBER";
+const char OPERATOR[9] = "OPERATOR";
+
+// Token Type Array
+const char types_array() {
+    const char token_types[8] = {
+        ALPHABETIC[11],
+        COMMENT[8],
+        DELIMITER[10],
+        END_OF_FILE[4],
+        ESCAPE[7],
+        KEYWORD[8],
+        NUMBER[7],
+        OPERATOR[9],
+    };
+
+    return *token_types;
+}

@@ -10,14 +10,10 @@ const char RIGHT_SQUARE_BRACKET = ']';
 
 // Delimiter Token Array
 const char delimiters_array() {
-    const char delimiters[6] = {
-        LEFT_BRACKET,
-        LEFT_PARENTHESIS,
-        LEFT_SQUARE_BRACKET,
-        RIGHT_BRACKET,
-        RIGHT_PARENTHESIS,
-        RIGHT_SQUARE_BRACKET,
-    };
+  const char delimiters[6] = {
+      LEFT_BRACKET,  LEFT_PARENTHESIS,  LEFT_SQUARE_BRACKET,
+      RIGHT_BRACKET, RIGHT_PARENTHESIS, RIGHT_SQUARE_BRACKET,
+  };
 
-    return *delimiters;
+  return *delimiters;
 }

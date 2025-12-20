@@ -11,15 +11,10 @@ const char TAB = '\t';
 
 // Escape Token Array
 const char escapes_array() {
-    const char strings[7] = {
-        APOSTROPHE,
-        BACKSLASH,
-        CARRIAGE_RETURN,
-        NEW_LINE,
-        NULL_CHARACTER,
-        QUOTATION_MARK,
-        TAB,
-    };
+  const char strings[7] = {
+      APOSTROPHE,     BACKSLASH, CARRIAGE_RETURN, NEW_LINE, NULL_CHARACTER,
+      QUOTATION_MARK, TAB,
+  };
 
-    return *strings;
+  return *strings;
 }

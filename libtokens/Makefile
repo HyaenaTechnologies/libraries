@@ -23,6 +23,10 @@ check:
 	ar -rv ./tokens.a ./*.o
 	ar -rv ./tokens.so ./*.o
 
+# Format Package
+format:
+	clang-format -i ./src/*.c ./src/*.h
+
 # Clean Package
 clean:
 	rm ./build/**

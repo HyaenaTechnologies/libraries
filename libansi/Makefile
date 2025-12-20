@@ -23,6 +23,10 @@ check:
 	ar -rv ./ansi.a ./*.o
 	ar -rv ./ansi.so ./*.o
 
+# Format Package
+format:
+	clang-format -i ./src/*.c ./src/*.h
+
 # Clean Package
 clean:
 	rm ./build/**

@@ -23,6 +23,10 @@ check:
 	ar -rv ./array.a ./*.o
 	ar -rv ./array.so ./*.o
 
+# Format Package
+format:
+	clang-format -i ./src/*.c ./src/*.h
+
 # Clean Package
 clean:
 	rm ./build/**

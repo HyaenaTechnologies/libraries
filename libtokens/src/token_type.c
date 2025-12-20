@@ -12,16 +12,10 @@ const char OPERATOR[9] = "OPERATOR";
 
 // Token Type Array
 const char types_array() {
-    const char token_types[8] = {
-        ALPHABETIC[11],
-        COMMENT[8],
-        DELIMITER[10],
-        END_OF_FILE[4],
-        ESCAPE[7],
-        KEYWORD[8],
-        NUMBER[7],
-        OPERATOR[9],
-    };
+  const char token_types[8] = {
+      ALPHABETIC[11], COMMENT[8], DELIMITER[10], END_OF_FILE[4],
+      ESCAPE[7],      KEYWORD[8], NUMBER[7],     OPERATOR[9],
+  };
 
-    return *token_types;
+  return *token_types;
 }

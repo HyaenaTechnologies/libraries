@@ -13,19 +13,10 @@ const char EIGHT = '8';
 const char NINE = '9';
 
 // Number Token Array
-const char numbers_array()  {
-    const char numbers[10] = {
-        ZERO,
-        ONE,
-        TWO,
-        THREE,
-        FOUR,
-        FIVE,
-        SIX,
-        SEVEN,
-        EIGHT,
-        NINE,
-    };
+const char numbers_array() {
+  const char numbers[10] = {
+      ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,
+  };
 
-    return *numbers;
+  return *numbers;
 }

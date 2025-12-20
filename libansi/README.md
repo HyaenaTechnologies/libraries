@@ -1,7 +1,8 @@
-[C Language]: https://learn.microsoft.com/en-us/cpp/
+[C Language]: https://www.c-language.org/
 [Clang Compiler]: https://clang.llvm.org/docs/index.html
 [GNU Compiler Collection]: https://gcc.gnu.org/onlinedocs/
 [GCC Debugger]: https://www.sourceware.org/gdb/documentation/
+[GNU LibC]: https://sourceware.org/glibc/manual/latest/html_node/index.html
 [GNU Make]: https://www.gnu.org/software/make/manual/
 [LLVM IR]: https://llvm.org/docs/
 [Low Level Debugger]: https://lldb.llvm.org/
@@ -25,6 +26,7 @@ ANSI Codes and Escape Sequences
 - [LLD][Low Level Linker]
 - [GCC][GNU Compiler Collection]
 - [GDB][GCC Debugger]
+- [Lib C][GNU LibC]
 - [Make][GNU Make]
 
 ### GNU Make
@@ -33,6 +35,8 @@ ANSI Codes and Escape Sequences
 make build
 
 make check
+
+make format
 
 make clean
 ```

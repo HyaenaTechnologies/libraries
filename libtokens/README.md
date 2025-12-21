@@ -1,4 +1,5 @@
 [C Language]: https://www.c-language.org/
+[C++ Language]: https://isocpp.org/
 [Clang Compiler]: https://clang.llvm.org/docs/index.html
 [GNU Compiler Collection]: https://gcc.gnu.org/onlinedocs/
 [GCC Debugger]: https://www.sourceware.org/gdb/documentation/
@@ -19,6 +20,7 @@ Tokens and Token Types for Tokenizers
 ## Build
 
 - [C][C Language]
+- [C++][C++ Language]
 - [LLVM][LLVM IR]
 - [Clang][Clang Compiler]
 - [LLDB][Low Level Debugger]
@@ -46,7 +48,7 @@ make clean
 ## Compile
 cd ./build
 
-clang -c ../src/*.c -include ../src/*.h
+clang++ -c ../src/*.cc -include ../src/*.hh
 
 ar -rv ./tokens.a ./*.o
 
@@ -76,7 +78,7 @@ rm ./build/**
 ## Compile
 cd ./build
 
-gcc -c ../src/*.c -include ../src/*.h
+g++ -c ../src/*.cc -include ../src/*.hh
 
 ar -rv ./tokens.a ./*.o
 

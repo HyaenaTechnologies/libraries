@@ -1,0 +1,23 @@
+author = "Hyaena Technologies"
+description = "ANSI Codes and Escape Sequences"
+license = "AGPL-3.0"
+name = "ansi"
+version = "1.0.0"
+
+[build]
+auto-executables = false
+auto-examples = false
+auto-tests = false
+
+[library]
+source-dir = "src"
+type = ["shared", "static"]
+
+[fortran]
+implicit-external = false
+implicit-typing = false
+source-form = "free"
+
+[install]
+library = false
+

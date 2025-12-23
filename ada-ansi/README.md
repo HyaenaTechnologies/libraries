@@ -1,4 +1,4 @@
-[Ada Language]: https://learn.adacore.com/
+[Ada Language]: https://ada-lang.io/docs/arm
 [GNU Compiler Collection]: https://gcc.gnu.org/onlinedocs/
 [GCC Debugger]: https://www.sourceware.org/gdb/documentation/
 

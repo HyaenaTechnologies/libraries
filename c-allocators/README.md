@@ -32,6 +32,8 @@ Custom Memory Allocators
 ```shell
 make build
 
+make check
+
 make format
 
 make test

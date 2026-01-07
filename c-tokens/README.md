@@ -31,6 +31,8 @@ Tokens and Token Types for Tokenizers
 ```shell
 make build
 
+make check
+
 make format
 ```
 

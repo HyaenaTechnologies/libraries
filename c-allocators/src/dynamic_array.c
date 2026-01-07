@@ -50,24 +50,3 @@ int remove_element(struct DynamicArray array, int index) {
   return 0;
 }
 
-// Returns the current Index of the Dynamic Array
-int return_index(struct DynamicArray array) {
-
-
-  return 0;
- }
-
-// Returns the Length of the Dynamic Array
-int return_length(struct DynamicArray array) {
-
-
-  return 0;
-}
-
-// Returns the Size of the Buffer of the Dynamic Array
-int return_size(struct DynamicArray array) {
-
-
-  return 0;
-}
-

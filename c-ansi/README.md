@@ -32,6 +32,8 @@ ANSI Codes and Escape Sequences
 ```shell
 make build
 
+make check
+
 make format
 ```
 

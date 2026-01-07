@@ -31,14 +31,5 @@ int push_element(struct DynamicArray array);
 // Shifts all Elements after it, to the Left
 int remove_element(struct DynamicArray array, int index);
 
-// Returns the current Index of the Dynamic Array
-int return_index(struct DynamicArray array);
-
-// Returns the Length of the Dynamic Array
-int return_length(struct DynamicArray array);
-
-// Returns the Size of the Buffer of the Dynamic Array
-int return_size(struct DynamicArray array);
-
 #endif
 

@@ -31,6 +31,8 @@ Generic Syntax Tree for Parsers
 ```shell
 make build
 
+make check
+
 make format
 ```
 

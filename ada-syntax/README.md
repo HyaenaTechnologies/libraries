@@ -28,7 +28,7 @@ alr run
 alr clean
 ```
 
-## LLVM Ada Compiler
+## GNU Ada Compiler
 
 ```shell
 ## Compile

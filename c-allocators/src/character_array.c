@@ -4,21 +4,21 @@
 #include <stdlib.h>
 
 // Changes the Size of the Dynamic Character Array
-int change_size(struct CharacterArray array) {
+int change_size(struct CharacterArray initial_array) {
 
 
   return 0;
 }
 
 // Clear all Elements from the Dynamic Character Array
-int clear_array(struct CharacterArray array) {
+int clear_array(struct CharacterArray initial_array) {
 
 
   return 0;
 }
 
 // Create Dynamic Character Array
-int create_array(struct CharacterArray array) {
+int create_array(struct CharacterArray initial_array) {
 
 
   return 0;
@@ -27,14 +27,14 @@ int create_array(struct CharacterArray array) {
 // Insert an Element into the Dynamic Character Array
 // At an Index Position
 // Shifts all Elements after it, to the Right
-int insert_element(struct CharacterArray array, int index) {
+int insert_element(struct CharacterArray initial_array, int index) {
 
 
   return 0;
 }
 
 // Append an Element to the End of the Dynamic Character Array
-int push_element(struct CharacterArray array) {
+int push_element(struct CharacterArray initial_array) {
 
 
   return 0;
@@ -44,7 +44,7 @@ int push_element(struct CharacterArray array) {
 // At an Index Position
 // Returns the Element
 // Shifts all Elements after it, to the Left
-int remove_element(struct CharacterArray array, int index) {
+int remove_element(struct CharacterArray initial_array, int index) {
 
 
   return 0;

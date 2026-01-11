@@ -50,6 +50,7 @@ int create_array(struct UnsignedIntegerArray initial_array) {
 int insert_element(struct UnsignedIntegerArray initial_array, int element, int index) {
   int address = initial_array.index;
   unsigned **array = initial_array.array;
+  int capacity = initial_array.capacity;
   int length = initial_array.length;
 
   for (address = index; address < length; address = address + 1) {
@@ -58,6 +59,7 @@ int insert_element(struct UnsignedIntegerArray initial_array, int element, int i
 
   *array[index] = element;
   length = length + 1;
+  capacity = length;
   array = realloc(array,sizeof(int[length]));
 
   return 0;
@@ -66,12 +68,14 @@ int insert_element(struct UnsignedIntegerArray initial_array, int element, int i
 // Append an Element to the End of the Dynamic Unsigned Integer Array
 int push_element(struct UnsignedIntegerArray initial_array, int element) {
   unsigned **array = initial_array.array;
+  int capacity = initial_array.capacity;
   int index = initial_array.index;
   int length = initial_array.length;
 
   length = length + 1;
-  array = realloc(array,sizeof(int[length]));
+  capacity = length;
   index = length;
+  array = realloc(array,sizeof(int[length]));
   *array[index] = element;
 
   return 0;
@@ -84,6 +88,7 @@ int push_element(struct UnsignedIntegerArray initial_array, int element) {
 int remove_element(struct UnsignedIntegerArray initial_array, int index) {
   int address = initial_array.index;
   unsigned **array = initial_array.array;
+  int capacity = initial_array.capacity;
   unsigned *element = array[index];
   int length = initial_array.length;
 
@@ -92,6 +97,7 @@ int remove_element(struct UnsignedIntegerArray initial_array, int index) {
   }
 
   length = length - 1;
+  capacity = length;
   array = realloc(array,sizeof(int[length]));
 
   return *element;

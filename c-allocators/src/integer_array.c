@@ -19,7 +19,9 @@ int create_array(struct IntegerArray initial_array) {
 
   if (capacity == 0) {
     capacity = 4;
-    array = malloc(sizeof(int[capacity]));
+    array = malloc(sizeof(int[capacity+length]));
+  } else if (capacity != 0) {
+    array = malloc(sizeof(int[capacity+length]));
   } else if (array == NULL) {    
     printf(stderr, "Error Allocating Memory\n");
   } else {

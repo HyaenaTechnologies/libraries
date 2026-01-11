@@ -6,7 +6,7 @@
 // Clear all Elements from the Dynamic Unsigned Integer Array
 // Assigns the Value of all Elements to NULL
 int clear_array(struct UnsignedIntegerArray initial_array) {
-  unsigned **array = initial_array.array;
+  unsigned int **array = initial_array.array;
   int index = initial_array.index;
   int length = initial_array.length;
 
@@ -19,7 +19,7 @@ int clear_array(struct UnsignedIntegerArray initial_array) {
 
 // Create Dynamic Unsigned Integer Array
 int create_array(struct UnsignedIntegerArray initial_array) {
-  unsigned **array = initial_array.array;
+  unsigned int **array = initial_array.array;
   int capacity = initial_array.capacity;
 
   if (capacity == 0) {
@@ -28,6 +28,7 @@ int create_array(struct UnsignedIntegerArray initial_array) {
     
     if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
+      return 1;
     } else {
       printf("Memory Allocated");
     }
@@ -49,7 +50,7 @@ int create_array(struct UnsignedIntegerArray initial_array) {
 // Shifts all Elements after it, to the Right
 int insert_element(struct UnsignedIntegerArray initial_array, int element, int index) {
   int address = initial_array.index;
-  unsigned **array = initial_array.array;
+  unsigned int **array = initial_array.array;
   int capacity = initial_array.capacity;
   int length = initial_array.length;
 
@@ -62,12 +63,17 @@ int insert_element(struct UnsignedIntegerArray initial_array, int element, int i
   capacity = length;
   array = realloc(array,sizeof(int[length]));
 
-  return 0;
+  if (array == NULL) {    
+      printf(stderr, "Memory Allocation Error\n");
+      return 1;
+    } else {
+      return 0;
+    }
  }
 
 // Append an Element to the End of the Dynamic Unsigned Integer Array
 int push_element(struct UnsignedIntegerArray initial_array, int element) {
-  unsigned **array = initial_array.array;
+  unsigned int **array = initial_array.array;
   int capacity = initial_array.capacity;
   int index = initial_array.index;
   int length = initial_array.length;
@@ -78,7 +84,12 @@ int push_element(struct UnsignedIntegerArray initial_array, int element) {
   array = realloc(array,sizeof(int[length]));
   *array[index] = element;
 
-  return 0;
+  if (array == NULL) {    
+      printf(stderr, "Memory Allocation Error\n");
+      return 1;
+    } else {
+      return 0;
+    }
 }
 
 // Remove an Element from of the Dynamic Unsigned Integer Array
@@ -87,9 +98,9 @@ int push_element(struct UnsignedIntegerArray initial_array, int element) {
 // Shifts all Elements after it, to the Left
 int remove_element(struct UnsignedIntegerArray initial_array, int index) {
   int address = initial_array.index;
-  unsigned **array = initial_array.array;
+  unsigned int **array = initial_array.array;
   int capacity = initial_array.capacity;
-  unsigned *element = array[index];
+  unsigned int *element = array[index];
   int length = initial_array.length;
 
   for (address = index; address < length; address = address + 1) {
@@ -100,6 +111,11 @@ int remove_element(struct UnsignedIntegerArray initial_array, int index) {
   capacity = length;
   array = realloc(array,sizeof(int[length]));
 
-  return *element;
+  if (array == NULL) {    
+      printf(stderr, "Memory Allocation Error\n");
+      return 1;
+    } else {
+      return *element;
+    }
 }
 

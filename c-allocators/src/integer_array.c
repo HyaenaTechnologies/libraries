@@ -1,27 +1,7 @@
 #include "./integer_array.h"
 
-#include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
-
-// Changes the Size of the Dynamic Integer Array
-int change_size(struct IntegerArray initial_array) {
-  int **array = initial_array.array;
-  int capacity = initial_array.capacity;
-  int index = initial_array.index;
-  int length = initial_array.length;
-
-  array = malloc(sizeof(int[capacity]));
-
-  if (array == NULL) {    
-    printf("Error Allocating Memory\n");
-  } else if (capacity == 0) {
-    capacity = 64;
-  }
-
-  
-  return 0;
-}
 
 // Clear all Elements from the Dynamic Integer Array
 int clear_array(struct IntegerArray initial_array) {
@@ -32,7 +12,19 @@ int clear_array(struct IntegerArray initial_array) {
 
 // Create Dynamic Integer Array
 int create_array(struct IntegerArray initial_array) {
+  int **array = initial_array.array;
+  int capacity = initial_array.capacity;
+  int index = initial_array.index;
+  int length = initial_array.length;
 
+  if (capacity == 0) {
+    capacity = 4;
+    array = malloc(sizeof(int[capacity]));
+  } else if (array == NULL) {    
+    printf(stderr, "Error Allocating Memory\n");
+  } else {
+    
+  }
 
   return 0;
 }

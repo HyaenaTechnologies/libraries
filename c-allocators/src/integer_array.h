@@ -9,9 +9,6 @@ struct IntegerArray {
   int *array[];
 };
 
-// Changes the Size of the Dynamic Integer Array
-int change_size(struct IntegerArray initial_array);
-
 // Clear all Elements from the Dynamic Integer Array
 int clear_array(struct IntegerArray initial_array);
 

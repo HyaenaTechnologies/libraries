@@ -9,9 +9,6 @@ struct CharacterArray {
   char *array[];
 };
 
-// Changes the Size of the Dynamic Character Array
-int change_size(struct CharacterArray initial_array);
-
 // Clear all Elements from the Dynamic Character Array
 int clear_array(struct CharacterArray initial_array);
 

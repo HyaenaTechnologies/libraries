@@ -3,13 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Changes the Size of the Dynamic Character Array
-int change_size(struct CharacterArray initial_array) {
-
-
-  return 0;
-}
-
 // Clear all Elements from the Dynamic Character Array
 int clear_array(struct CharacterArray initial_array) {
 

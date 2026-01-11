@@ -9,9 +9,6 @@ struct UnsignedIntegerArray {
   unsigned int *array[];
 };
 
-// Changes the Size of the Dynamic Unsigned Integer Array
-int change_size(struct UnsignedIntegerArray initial_array);
-
 // Clear all Elements from the Dynamic Unsigned Integer Array
 int clear_array(struct UnsignedIntegerArray initial_array);
 

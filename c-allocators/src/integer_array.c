@@ -22,12 +22,14 @@ int create_array(struct IntegerArray initial_array) {
     array = malloc(sizeof(int[capacity+length]));
   } else if (capacity != 0) {
     array = malloc(sizeof(int[capacity+length]));
-  } else if (array == NULL) {    
+  }
+
+  if (array == NULL) {    
     printf(stderr, "Error Allocating Memory\n");
   } else {
     
-  }
-
+  }  
+    
   return 0;
 }
 

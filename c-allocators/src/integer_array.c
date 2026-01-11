@@ -4,12 +4,15 @@
 #include <stdlib.h>
 
 // Clear all Elements from the Dynamic Integer Array
+// Assigns the Value of all Elements to NULL
 int clear_array(struct IntegerArray initial_array) {
   int **array = initial_array.array;
-  int capacity = initial_array.capacity;
   int index = initial_array.index;
   int length = initial_array.length;
 
+  for (index = 0; index < length; index = index + 1) {
+    array[index] = NULL;
+  }
 
   return 0;
 }
@@ -18,20 +21,24 @@ int clear_array(struct IntegerArray initial_array) {
 int create_array(struct IntegerArray initial_array) {
   int **array = initial_array.array;
   int capacity = initial_array.capacity;
-  int index = initial_array.index;
-  int length = initial_array.length;
 
   if (capacity == 0) {
     capacity = 4;
     array = malloc(sizeof(int[capacity]));
+    
+    if (array == NULL) {    
+      printf(stderr, "Memory Allocation Error\n");
+    } else {
+      printf("Memory Allocated");
+    }
   } else if (capacity != 0) {
     array = malloc(sizeof(int[capacity]));
-  }
 
-  if (array == NULL) {    
-    printf(stderr, "Memory Allocation Error\n");
-  } else if (length == capacity) {
-    array = realloc(array,sizeof(int[(capacity+length)*2]));
+    if (array == NULL) {    
+      printf(stderr, "Memory Allocation Error\n");
+    } else {
+      printf("Memory Allocated");
+    }
   }
 
   return 0;
@@ -40,22 +47,32 @@ int create_array(struct IntegerArray initial_array) {
 // Insert an Element into the Dynamic Integer Array
 // At an Index Position
 // Shifts all Elements after it, to the Right
-int insert_element(struct IntegerArray initial_array, int index) {
+int insert_element(struct IntegerArray initial_array, int element, int index) {
+  int address = initial_array.index;
   int **array = initial_array.array;
-  int capacity = initial_array.capacity;
   int length = initial_array.length;
 
+  for (address = index; address < length; address = address + 1) {
+    array[address] = array[address - 1];
+  }
+
+  *array[index] = element;
+  length = length + 1;
+  array = realloc(array,sizeof(int[length]));
 
   return 0;
-}
+ }
 
 // Append an Element to the End of the Dynamic Integer Array
-int push_element(struct IntegerArray initial_array) {
+int push_element(struct IntegerArray initial_array, int element) {
   int **array = initial_array.array;
-  int capacity = initial_array.capacity;
   int index = initial_array.index;
   int length = initial_array.length;
 
+  length = length + 1;
+  array = realloc(array,sizeof(int[length]));
+  index = length;
+  *array[index] = element;
 
   return 0;
 }
@@ -65,19 +82,18 @@ int push_element(struct IntegerArray initial_array) {
 // Returns the Element
 // Shifts all Elements after it, to the Left
 int remove_element(struct IntegerArray initial_array, int index) {
+  int address = initial_array.index;
   int **array = initial_array.array;
-  int capacity = initial_array.capacity;
-  int element;
+  int *element = array[index];
   int length = initial_array.length;
 
-  for (element = index; element < length; element = element + 1) {
-    array[element] = array[element + 1];
+  for (address = index; address < length; address = address + 1) {
+    array[address] = array[address + 1];
   }
 
-  capacity = capacity -1;
   length = length - 1;
-  array = realloc(array,sizeof(int[(capacity)]));
+  array = realloc(array,sizeof(int[length]));
 
-  return *array[index];
+  return *element;
 }
 

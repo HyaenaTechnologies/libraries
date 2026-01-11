@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 // Clear all Elements from the Dynamic Character Array
+// Assigns the Value of all Elements to NULL
 int clear_array(struct CharacterArray initial_array) {
 
 
@@ -20,14 +21,14 @@ int create_array(struct CharacterArray initial_array) {
 // Insert an Element into the Dynamic Character Array
 // At an Index Position
 // Shifts all Elements after it, to the Right
-int insert_element(struct CharacterArray initial_array, int index) {
+int insert_element(struct CharacterArray initial_array, int element, int index) {
 
 
   return 0;
 }
 
 // Append an Element to the End of the Dynamic Character Array
-int push_element(struct CharacterArray initial_array) {
+int push_element(struct CharacterArray initial_array, int element) {
 
 
   return 0;

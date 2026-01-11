@@ -10,6 +10,7 @@ struct UnsignedIntegerArray {
 };
 
 // Clear all Elements from the Dynamic Unsigned Integer Array
+// Assigns the Value of all Elements to NULL
 int clear_array(struct UnsignedIntegerArray initial_array);
 
 // Create Dynamic Array
@@ -18,10 +19,10 @@ int create_array(struct UnsignedIntegerArray initial_array);
 // Insert an Element into the Dynamic Unsigned Integer Array
 // At an Index Position
 // Shifts all Elements after it, to the Right
-int insert_element(struct UnsignedIntegerArray initial_array, int index);
+int insert_element(struct UnsignedIntegerArray initial_array, int element, int index);
 
 // Append an Element to the End of the Dynamic Unsigned Integer Array
-int push_element(struct UnsignedIntegerArray initial_array);
+int push_element(struct UnsignedIntegerArray initial_array, int element);
 
 // Remove an Element from of the Dynamic Unsigned Integer Array
 // At an Index Position

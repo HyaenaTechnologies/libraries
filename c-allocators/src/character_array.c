@@ -77,7 +77,7 @@ int push_element(struct CharacterArray initial_array, int element) {
 
   length = length + 1;
   capacity = length;
-  index = length;
+  index = length - 1;
   array = realloc(array,sizeof(int[capacity]));
   *array[index] = element;
   

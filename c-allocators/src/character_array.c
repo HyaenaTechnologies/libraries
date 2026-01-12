@@ -29,16 +29,13 @@ int create_array(struct CharacterArray initial_array) {
     if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
       return 1;
-    } else {
-      printf("Memory Allocated");
     }
   } else if (capacity != 0) {
     array = malloc(sizeof(int[capacity]));
 
     if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
-    } else {
-      printf("Memory Allocated");
+      return 1;
     }
   }
 
@@ -61,14 +58,14 @@ int insert_element(struct CharacterArray initial_array, int element, int index) 
   *array[index] = element;
   length = length + 1;
   capacity = length;
-  array = realloc(array,sizeof(int[length]));
-
+  array = realloc(array,sizeof(int[capacity]));
+  
   if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
       return 1;
-    } else {
-      return 0;
-    }
+  }
+
+  return 0;
  }
 
 // Append an Element to the End of the Dynamic Character Array
@@ -81,15 +78,15 @@ int push_element(struct CharacterArray initial_array, int element) {
   length = length + 1;
   capacity = length;
   index = length;
-  array = realloc(array,sizeof(int[length]));
+  array = realloc(array,sizeof(int[capacity]));
   *array[index] = element;
-
+  
   if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
       return 1;
-    } else {
-      return 0;
-    }
+  }
+
+  return 0;
 }
 
 // Remove an Element from of the Dynamic Character Array
@@ -109,13 +106,13 @@ int remove_element(struct CharacterArray initial_array, int index) {
 
   length = length - 1;
   capacity = length;
-  array = realloc(array,sizeof(int[length]));
-
+  array = realloc(array,sizeof(int[capacity]));
+  
   if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
       return 1;
-    } else {
-      return *element;
-    }
+  }
+
+  return 0;
 }
 

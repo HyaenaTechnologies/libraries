@@ -113,6 +113,6 @@ int remove_element(struct IntegerArray initial_array, int index) {
       return 1;
   }
 
-  return 0;
+   return *element;
 }
 

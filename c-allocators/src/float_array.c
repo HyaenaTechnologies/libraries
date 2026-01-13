@@ -1,13 +1,13 @@
-#include "./character_array.h"
+#include "./float_array.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 
-// Clear all Elements from the Dynamic Character Array
+// Clear all Elements from the Dynamic Float Array
 // Assigns the Value of all Elements to NULL
 // Returns the Array
-int clear_array(struct CharacterArray initial_array) {
-  char **array = initial_array.array;
+int clear_array(struct FloatArray initial_array) {
+  float **array = initial_array.array;
   int index = initial_array.index;
   int length = initial_array.length;
 
@@ -18,11 +18,11 @@ int clear_array(struct CharacterArray initial_array) {
   return **array;
 }
 
-// Create Dynamic Character Array
+// Create Dynamic Float Array
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-int create_array(struct CharacterArray initial_array) {
-  char **array = initial_array.array;
+int create_array(struct FloatArray initial_array) {
+  float **array = initial_array.array;
   int capacity = initial_array.capacity;
 
   if (capacity == 0) {
@@ -45,14 +45,14 @@ int create_array(struct CharacterArray initial_array) {
   return **array;
 }
 
-// Insert an Element into the Dynamic Character Array
+// Insert an Element into the Dynamic Float Array
 // At an Index Position
 // Shifts all Elements after it, to the Right
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-int insert_element(struct CharacterArray initial_array, int element, int index) {
+int insert_element(struct FloatArray initial_array, int element, int index) {
   int address = initial_array.index;
-  char **array = initial_array.array;
+  float **array = initial_array.array;
   int capacity = initial_array.capacity;
   int length = initial_array.length;
 
@@ -73,11 +73,11 @@ int insert_element(struct CharacterArray initial_array, int element, int index) 
   return **array;
  }
 
-// Append an Element to the End of the Dynamic Character Array
+// Append an Element to the End of the Dynamic Float Array
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-int push_element(struct CharacterArray initial_array, int element) {
-  char **array = initial_array.array;
+int push_element(struct FloatArray initial_array, int element) {
+  float **array = initial_array.array;
   int capacity = initial_array.capacity;
   int index = initial_array.index;
   int length = initial_array.length;
@@ -96,16 +96,16 @@ int push_element(struct CharacterArray initial_array, int element) {
   return **array;
 }
 
-// Remove an Element from of the Dynamic Character Array
+// Remove an Element from of the Dynamic Float Array
 // At an Index Position
 // Returns the Element
 // Shifts all Elements after it, to the Left
 // Returns NULL if Memory Allocation Failed
-int remove_element(struct CharacterArray initial_array, int index) {
+int remove_element(struct FloatArray initial_array, int index) {
   int address = initial_array.index;
-  char **array = initial_array.array;
+  float **array = initial_array.array;
   int capacity = initial_array.capacity;
-  char *element = array[index];
+  float *element = array[index];
   int length = initial_array.length;
 
   for (address = index; address < length; address = address + 1) {

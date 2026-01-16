@@ -78,6 +78,7 @@ ar -crs ansi.a ./*.o
 ar -crs ansi.so ./*.o
 
 ## Analyze
+-fanalyzer
 -Wall: All Warnings
 -Wextra: Extra Warnings
 -Wanalyzer-allocation-size

@@ -29,6 +29,14 @@ alr run
 alr clean
 ```
 
+### GNU Make
+
+```shell
+make build
+
+make check
+```
+
 ## GNU Ada Compiler
 
 ```shell
@@ -42,6 +50,7 @@ ar -crs ansi.a ./*.o
 ar -crs ansi.so ./*.o
 
 ## Analyze
+-fanalyzer
 -Wall: All Warnings
 -Wextra: Extra Warnings
 -Wanalyzer-allocation-size

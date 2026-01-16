@@ -77,6 +77,7 @@ ar -crs tokens.a ./*.o
 ar -crs tokens.so ./*.o
 
 ## Analyze
+-fanalyzer
 -Wall: All Warnings
 -Wextra: Extra Warnings
 -Wanalyzer-allocation-size

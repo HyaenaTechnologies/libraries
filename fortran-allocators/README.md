@@ -37,6 +37,14 @@ fpm run
 fpm clean
 ```
 
+### GNU Make
+
+```shell
+make build
+
+make check
+```
+
 ## LLVM Fortran Compiler
 
 ```shell
@@ -78,6 +86,7 @@ ar -crs allocators.a ./*.o
 ar -crs allocators.so ./*.o
 
 ## Analyze
+-fanalyzer
 -Wall: All Warnings
 -Wextra: Extra Warnings
 -Wanalyzer-allocation-size

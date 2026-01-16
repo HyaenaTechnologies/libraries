@@ -28,6 +28,14 @@ alr run
 alr clean
 ```
 
+### GNU Make
+
+```shell
+make build
+
+make check
+```
+
 ## GNU Ada Compiler
 
 ```shell
@@ -41,6 +49,7 @@ ar -crs tokens.a ./*.o
 ar -crs tokens.so ./*.o
 
 ## Analyze
+-fanalyzer
 -Wall: All Warnings
 -Wextra: Extra Warnings
 -Wanalyzer-allocation-size

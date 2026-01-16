@@ -77,6 +77,7 @@ ar -crs syntax.a ./*.o
 ar -crs syntax.so ./*.o
 
 ## Analyze
+-fanalyzer
 -Wall: All Warnings
 -Wextra: Extra Warnings
 -Wanalyzer-allocation-size

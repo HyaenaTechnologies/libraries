@@ -39,6 +39,7 @@ make format
 make test
 ```
 
+-fanalyzer
 ## Clang
 
 ```shell
@@ -80,6 +81,7 @@ ar -crs allocators.a ./*.o
 ar -crs allocators.so ./*.o
 
 ## Analyze
+-fanalyzer
 -Wall: All Warnings
 -Wextra: Extra Warnings
 -Wanalyzer-allocation-size

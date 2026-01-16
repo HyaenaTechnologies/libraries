@@ -29,6 +29,16 @@ alr run
 alr clean
 ```
 
+### GNU Make
+
+```shell
+make build
+
+make check
+
+make test
+```
+
 ## GNU Ada Compiler
 
 ```shell
@@ -42,6 +52,7 @@ ar -crs allocators.a ./*.o
 ar -crs allocators.so ./*.o
 
 ## Analyze
+-fanalyzer
 -Wall: All Warnings
 -Wextra: Extra Warnings
 -Wanalyzer-allocation-size

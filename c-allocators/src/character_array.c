@@ -6,7 +6,7 @@
 // Clear all Elements from the Dynamic Character Array
 // Assigns the Value of all Elements to NULL
 // Returns the Array
-int clear_array(struct CharacterArray initial_array) {
+char clear_array(struct CharacterArray initial_array) {
   char **array = initial_array.array;
   int index = initial_array.index;
   int length = initial_array.length;
@@ -21,7 +21,7 @@ int clear_array(struct CharacterArray initial_array) {
 // Create Dynamic Character Array
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-int create_array(struct CharacterArray initial_array) {
+char create_array(struct CharacterArray initial_array) {
   char **array = initial_array.array;
   int capacity = initial_array.capacity;
 
@@ -50,7 +50,7 @@ int create_array(struct CharacterArray initial_array) {
 // Shifts all Elements after it, to the Right
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-int insert_element(struct CharacterArray initial_array, int element, int index) {
+char insert_element(struct CharacterArray initial_array, int element, int index) {
   int address = initial_array.index;
   char **array = initial_array.array;
   int capacity = initial_array.capacity;
@@ -76,7 +76,7 @@ int insert_element(struct CharacterArray initial_array, int element, int index) 
 // Append an Element to the End of the Dynamic Character Array
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-int push_element(struct CharacterArray initial_array, int element) {
+char push_element(struct CharacterArray initial_array, int element) {
   char **array = initial_array.array;
   int capacity = initial_array.capacity;
   int index = initial_array.index;
@@ -101,7 +101,7 @@ int push_element(struct CharacterArray initial_array, int element) {
 // Returns the Element
 // Shifts all Elements after it, to the Left
 // Returns NULL if Memory Allocation Failed
-int remove_element(struct CharacterArray initial_array, int index) {
+char remove_element(struct CharacterArray initial_array, int index) {
   int address = initial_array.index;
   char **array = initial_array.array;
   int capacity = initial_array.capacity;

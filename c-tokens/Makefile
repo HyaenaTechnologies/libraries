@@ -21,6 +21,11 @@ check: ./src/*.c
 	ar -rcs tokens.a ./*.o
 	ar -rcs tokens.so ./*.o
 
+# Clean Package
+clean:
+	cd ./build
+	rm ./*
+
 # Format Package
 format: ./src/*.c ./src/*.h
 	clang-format -i ./src/*.c ./src/*.h

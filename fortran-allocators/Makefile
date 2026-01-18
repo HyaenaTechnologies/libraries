@@ -21,3 +21,11 @@ check: ./src/*.f90
 	ar -rcs alloators.a ./*.o
 	ar -rcs alloators.so ./*.o
 
+# Clean Package
+clean:
+	cd ./build
+	rm ./*
+
+# Test Package
+test: ./tests/*.f90
+

@@ -10,14 +10,19 @@ all: build
 # Compile Package
 build: ./src/*.adb ./src/*.ads
 	cd ./build
-	gnat compile $(CFLAGS) ../src/*.adb ../src/*.ads
+	gnat make $(CFLAGS) ../src/*.adb ../src/*.ads
 	ar -rcs syntax.a ./*.o
 	ar -rcs syntax.so ./*.o
 
 # Check Package
 check: ./src/*.adb ./src/*.ads
 	cd ./build
-	gnat compile $(ANALYSIS_FLAGS) ../src/*.adb ../src/*.ads
+	gnat make $(ANALYSIS_FLAGS) ../src/*.adb ../src/*.ads
 	ar -rcs syntax.a ./*.o
 	ar -rcs syntax.so ./*.o
+
+# Clean Package
+clean:
+	cd ./build
+	rm ./*
 

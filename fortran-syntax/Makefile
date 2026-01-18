@@ -21,3 +21,8 @@ check: ./src/*.f90
 	ar -rcs syntax.a ./*.o
 	ar -rcs syntax.so ./*.o
 
+# Clean Package
+clean:
+	cd ./build
+	rm ./*
+

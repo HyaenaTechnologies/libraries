@@ -10,14 +10,22 @@ all: build
 # Compile Package
 build: ./src/*.adb ./src/*.ads
 	cd ./build
-	gnat compile $(CFLAGS) ../src/*.adb ../src/*.ads
+	gnat make $(CFLAGS) ../src/*.adb ../src/*.ads
 	ar -rcs allocators.a ./*.o
 	ar -rcs allocators.so ./*.o
 
 # Check Package
 check: ./src/*.adb ./src/*.ads
 	cd ./build
-	gnat compile $(ANALYSIS_FLAGS) ../src/*.adb ../src/*.ads
+	gnat make $(ANALYSIS_FLAGS) ../src/*.adb ../src/*.ads
 	ar -rcs allocators.a ./*.o
 	ar -rcs allocators.so ./*.o
+
+# Clean Package
+clean:
+	cd ./build
+	rm ./*
+
+# Test Package
+test: ./tests/*.adb ./tests/*.ads
 

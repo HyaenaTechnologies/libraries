@@ -21,3 +21,8 @@ check: ./src/*.f90
 	ar -rcs tokens.a ./*.o
 	ar -rcs tokens.so ./*.o
 
+# Clean Package
+clean:
+	cd ./build
+	rm ./*
+

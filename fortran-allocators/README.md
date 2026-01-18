@@ -2,6 +2,7 @@
 [Clang Compiler]: https://clang.llvm.org/docs/index.html
 [GNU Compiler Collection]: https://gcc.gnu.org/onlinedocs/
 [GCC Debugger]: https://www.sourceware.org/gdb/documentation/
+[GNU Make]: https://www.gnu.org/software/make/manual/html_node/index.html
 [LLVM IR]: https://llvm.org/docs/
 [Low Level Debugger]: https://lldb.llvm.org/
 [Low Level Linker]: https://lld.llvm.org/
@@ -24,6 +25,7 @@ Custom Memory Allocators
 - [LLD][Low Level Linker]
 - [GCC][GNU Compiler Collection]
 - [GDB][GCC Debugger]
+- [Make][GNU Make]
 
 ### Fortran Package Manager
 
@@ -42,7 +44,11 @@ fpm clean
 ```shell
 make build
 
+make clean
+
 make check
+
+make test
 ```
 
 ## LLVM Fortran Compiler

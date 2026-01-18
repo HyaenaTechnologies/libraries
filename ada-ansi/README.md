@@ -1,6 +1,7 @@
 [Ada Language]: https://ada-lang.io/docs/arm
 [GNU Compiler Collection]: https://gcc.gnu.org/onlinedocs/
 [GCC Debugger]: https://www.sourceware.org/gdb/documentation/
+[GNU Make]: https://www.gnu.org/software/make/manual/html_node/index.html
 
 # ANSI Codes
 
@@ -16,6 +17,7 @@ ANSI Codes and Escape Sequences
 - [Ada][Ada Language]
 - [GCC][GNU Compiler Collection]
 - [GDB][GCC Debugger]
+- [Make][GNU Make]
 
 ### Ada Alire Package Manager
 
@@ -34,6 +36,8 @@ alr clean
 ```shell
 make build
 
+make clean
+
 make check
 ```
 
@@ -43,7 +47,7 @@ make check
 ## Compile
 cd ./build
 
-gnat compile ../src/*.adb ../src/*.ads
+gnat make ../src/*.adb ../src/*.ads
 
 ar -crs ansi.a ./*.o
 

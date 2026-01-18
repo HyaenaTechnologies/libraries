@@ -21,6 +21,11 @@ check: ./src/*.c
 	ar -rcs syntax.a ./*.o
 	ar -rcs syntax.so ./*.o
 
+# Clean Package
+clean:
+	cd ./build
+	rm ./*
+
 # Format Package
 format: ./src/*.c ./src/*.h
 	clang-format -i ./src/*.c ./src/*.h

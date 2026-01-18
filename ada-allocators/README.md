@@ -1,6 +1,7 @@
 [Ada Language]: https://ada-lang.io/docs/arm
 [GNU Compiler Collection]: https://gcc.gnu.org/onlinedocs/
 [GCC Debugger]: https://www.sourceware.org/gdb/documentation/
+[GNU Make]: https://www.gnu.org/software/make/manual/html_node/index.html
 
 # Allocators
 
@@ -16,6 +17,7 @@ Custom Memory Allocators
 - [Ada][Ada Language]
 - [GCC][GNU Compiler Collection]
 - [GDB][GCC Debugger]
+- [Make][GNU Make]
 
 ### Ada Alire Package Manager
 
@@ -36,6 +38,8 @@ make build
 
 make check
 
+make clean
+
 make test
 ```
 
@@ -45,7 +49,7 @@ make test
 ## Compile
 cd ./build
 
-gnat compile ../src/*.adb ../src/*.ads
+gnat make ../src/*.adb ../src/*.ads
 
 ar -crs allocators.a ./*.o
 

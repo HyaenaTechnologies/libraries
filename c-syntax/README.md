@@ -33,6 +33,8 @@ make build
 
 make check
 
+make clean
+
 make format
 ```
 

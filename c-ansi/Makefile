@@ -2,7 +2,7 @@
 CFLAGS = -Wall -Wextra
 
 # C Compiler Analysis Flags
-ANALYSIS_FLAGS = -Wall -Wextra -fsanitize=memory
+ANALYSIS_FLAGS = --analyze -Wall -Wextra
 
 # Build All
 all: build

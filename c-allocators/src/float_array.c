@@ -3,28 +3,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Return the Length of the Dynamic Float Array
+int array_length(float *array[]) {
+  int index = 0;
+
+  while(array[index] != NULL) {
+    index = index + 1;
+  }
+
+  return index;
+}
+
 // Clear all Elements from the Dynamic Float Array
 // Assigns the Value of all Elements to NULL
 // Returns the Array
-float clear_array(struct FloatArray initial_array) {
-  float **array = initial_array.array;
-  int index = initial_array.index;
-  int length = initial_array.length;
+float clear_array(float *array[]) {  
+  int index = 0;
 
-  for (index = 0; index < length; index = index + 1) {
+  while(array[index] != NULL) {
     array[index] = NULL;
+    index = index + 1;
   }
-
+    
   return **array;
 }
 
 // Create Dynamic Float Array
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-float create_array(struct FloatArray initial_array) {
-  float **array = initial_array.array;
-  int capacity = initial_array.capacity;
-
+float create_array(float *array[], int capacity) {  
   if (capacity == 0) {
     capacity = 4;
     array = malloc(sizeof(int[capacity]));
@@ -50,48 +57,40 @@ float create_array(struct FloatArray initial_array) {
 // Shifts all Elements after it, to the Right
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-float insert_element(struct FloatArray initial_array, int element, int index) {
-  int address = initial_array.index;
-  float **array = initial_array.array;
-  int capacity = initial_array.capacity;
-  int length = initial_array.length;
+float insert_element(float *array[], int element, int index) {
+  int address;
+  int length = array_length(array);
 
-  for (address = index; address < length; address = address + 1) {
-    array[address] = array[address - 1];
-  }
-
-  *array[index] = element;
-  length = length + 1;
-  capacity = length;
-  array = realloc(array,sizeof(int[capacity]));
+  array = realloc(array,sizeof(int[length + 1]));
 
   if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
       return **array;
   }
+  
+  for (address = index; address < length; address = address + 1) {
+    array[address] = array[address - 1];
+  }
 
+  *array[index] = element;
+  
   return **array;
  }
 
 // Append an Element to the End of the Dynamic Float Array
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-float push_element(struct FloatArray initial_array, int element) {
-  float **array = initial_array.array;
-  int capacity = initial_array.capacity;
-  int index = initial_array.index;
-  int length = initial_array.length;
+float push_element(float *array[], int element) {
+  int length = array_length(array);
 
-  length = length + 1;
-  capacity = length;
-  index = length - 1;
-  array = realloc(array,sizeof(int[capacity]));
-  *array[index] = element;
-
+  array = realloc(array,sizeof(int[length + 1]));
+    
   if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
       return **array;
   }
+
+  *array[length + 1] = element;
 
   return **array;
 }
@@ -101,26 +100,22 @@ float push_element(struct FloatArray initial_array, int element) {
 // Returns the Element
 // Shifts all Elements after it, to the Left
 // Returns NULL if Memory Allocation Failed
-float remove_element(struct FloatArray initial_array, int index) {
-  int address = initial_array.index;
-  float **array = initial_array.array;
-  int capacity = initial_array.capacity;
+float remove_element(float *array[], int index) {
+  int address;
   float *element = array[index];
-  int length = initial_array.length;
-
+  int length = array_length(array);    
+  
   for (address = index; address < length; address = address + 1) {
     array[address] = array[address + 1];
   }
+  
+  array = realloc(array,sizeof(int[length - 1]));
 
-  length = length - 1;
-  capacity = length;
-  array = realloc(array,sizeof(int[capacity]));
-
-  if (array == NULL) {    
+  if (array == NULL) {
       printf(stderr, "Memory Allocation Error\n");
       return **array;
   }
 
-   return *element;
+  return *element;
 }
 

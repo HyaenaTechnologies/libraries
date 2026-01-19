@@ -23,6 +23,5 @@ check: ./src/*.f90
 
 # Clean Package
 clean:
-	cd ./build
-	rm ./*
+	rm ./build/*
 

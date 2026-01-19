@@ -23,8 +23,7 @@ check: ./src/*.f90
 
 # Clean Package
 clean:
-	cd ./build
-	rm ./*
+	rm ./build/*
 
 # Test Package
 test: ./tests/*.f90

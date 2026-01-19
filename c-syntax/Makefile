@@ -23,8 +23,7 @@ check: ./src/*.c
 
 # Clean Package
 clean:
-	cd ./build
-	rm ./*
+	rm ./build/*
 
 # Format Package
 format: ./src/*.c ./src/*.h

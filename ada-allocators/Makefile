@@ -23,8 +23,7 @@ check: ./src/*.adb ./src/*.ads
 
 # Clean Package
 clean:
-	cd ./build
-	rm ./*
+	rm ./build/*
 
 # Test Package
 test: ./tests/*.adb ./tests/*.ads

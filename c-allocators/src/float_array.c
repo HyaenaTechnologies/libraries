@@ -18,11 +18,11 @@ int array_length(float *array[]) {
 // Assigns the Value of all Elements to NULL
 // Returns the Array
 float clear_array(float *array[]) {  
-  int index = 0;
-
-  while(array[index] != NULL) {
+  int index;
+  int length = array_length(array);
+    
+  for (index = 0; index < length; index = index + 1) {
     array[index] = NULL;
-    index = index + 1;
   }
     
   return **array;

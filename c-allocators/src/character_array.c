@@ -18,11 +18,11 @@ int array_length(char *array[]) {
 // Assigns the Value of all Elements to '\0'
 // Returns the Array
 char clear_array(char *array[]) {  
-  int index = 0;
+  int index;
+  int length = array_length(array);
 
-  while(*array[index] != '\0') {
+  for (index = 0; index < length; index = index + 1) {
     *array[index] = '\0';
-    index = index + 1;
   }
     
   return **array;

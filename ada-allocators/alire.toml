@@ -1,9 +1,0 @@
-authors = ["Hyaena Technologies"]
-description = "Custom Memory Allocators"
-license = "AGPL-3.0"
-name = "allocators"
-version = "1.0.0"
-
-[test]
-runner = "alire"
-

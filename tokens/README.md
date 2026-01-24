@@ -7,14 +7,13 @@
 [Low Level Debugger]: https://lldb.llvm.org/
 [Low Level Linker]: https://lld.llvm.org/
 
-# Allocators
+# Tokens
 
-Custom Memory Allocators
+Tokens and Token Types for Tokenizers
 
 ## Features
 
-- Arena Allocator
-- Page Allocator
+- Tokens
 
 ## Build
 
@@ -37,12 +36,9 @@ make check
 make clean
 
 make format
-
-make test
 ```
 
--fanalyzer
-## Clang
+## LLVM Clang
 
 ```shell
 ## Compile
@@ -50,9 +46,9 @@ cd ./build
 
 clang ../src/*.c
 
-ar -crs allocators.a ./*.o
+ar -crs tokens.a ./*.o
 
-ar -crs allocators.so ./*.o
+ar -crs tokens.so ./*.o
 
 ## Analyze
 --analyze: Run the static analyzer
@@ -78,9 +74,9 @@ cd ./build
 
 gcc ../src/*.c
 
-ar -crs allocators.a ./*.o
+ar -crs tokens.a ./*.o
 
-ar -crs allocators.so ./*.o
+ar -crs tokens.so ./*.o
 
 ## Analyze
 -fanalyzer

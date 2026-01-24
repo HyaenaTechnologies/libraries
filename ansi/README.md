@@ -7,13 +7,14 @@
 [Low Level Debugger]: https://lldb.llvm.org/
 [Low Level Linker]: https://lld.llvm.org/
 
-# Tokens
+# ANSI Codes
 
-Tokens and Token Types for Tokenizers
+ANSI Codes and Escape Sequences
 
 ## Features
 
-- Tokens
+- Codes
+- Escape Sequences
 
 ## Build
 
@@ -38,7 +39,7 @@ make clean
 make format
 ```
 
-## Clang
+## LLVM Clang
 
 ```shell
 ## Compile
@@ -46,9 +47,9 @@ cd ./build
 
 clang ../src/*.c
 
-ar -crs tokens.a ./*.o
+ar -crs ansi.a ./*.o
 
-ar -crs tokens.so ./*.o
+ar -crs ansi.so ./*.o
 
 ## Analyze
 --analyze: Run the static analyzer
@@ -74,9 +75,9 @@ cd ./build
 
 gcc ../src/*.c
 
-ar -crs tokens.a ./*.o
+ar -crs ansi.a ./*.o
 
-ar -crs tokens.so ./*.o
+ar -crs ansi.so ./*.o
 
 ## Analyze
 -fanalyzer

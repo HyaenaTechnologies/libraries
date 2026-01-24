@@ -1,9 +1,0 @@
-authors = ["Hyaena Technologies"]
-description = "Tokens and Token Types"
-license = "AGPL-3.0"
-name = "tokens"
-version = "1.0.0"
-
-[test]
-runner = "alire"
-

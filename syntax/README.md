@@ -1,35 +1,30 @@
-[Ada Language]: https://ada-lang.io/docs/arm
+[C Language]: https://www.c-language.org/
+[Clang Compiler]: https://clang.llvm.org/docs/index.html
 [GNU Compiler Collection]: https://gcc.gnu.org/onlinedocs/
 [GCC Debugger]: https://www.sourceware.org/gdb/documentation/
 [GNU Make]: https://www.gnu.org/software/make/manual/html_node/index.html
+[LLVM IR]: https://llvm.org/docs/
+[Low Level Debugger]: https://lldb.llvm.org/
+[Low Level Linker]: https://lld.llvm.org/
 
-# Allocators
+# Syntax
 
-Custom Memory Allocators
+Generic Syntax Tree for Parsers
 
 ## Features
 
-- Arena Allocator
-- Page Allocator
+- Syntax Tree
 
 ## Build
 
-- [Ada][Ada Language]
+- [C][C Language]
+- [LLVM][LLVM IR]
+- [Clang][Clang Compiler]
+- [LLDB][Low Level Debugger]
+- [LLD][Low Level Linker]
 - [GCC][GNU Compiler Collection]
 - [GDB][GCC Debugger]
 - [Make][GNU Make]
-
-### Ada Alire Package Manager
-
-```shell
-alr build
-
-alr test
-
-alr run
-
-alr clean
-```
 
 ### GNU Make
 
@@ -40,20 +35,48 @@ make check
 
 make clean
 
-make test
+make format
 ```
 
-## GNU Ada Compiler
+## LLVM Clang
 
 ```shell
 ## Compile
 cd ./build
 
-gnat make ../src/*.adb ../src/*.ads
+clang ../src/*.c
 
-ar -crs allocators.a ./*.o
+ar -crs syntax.a ./*.o
 
-ar -crs allocators.so ./*.o
+ar -crs syntax.so ./*.o
+
+## Analyze
+--analyze: Run the static analyzer
+-Wall: All Warnings
+-Wextra: Extra Warnings
+-fsanitize=address: AddressSanitizer, a memory error detector.
+-fsanitize=thread: ThreadSanitizer, a data race detector.
+-fsanitize=memory: MemorySanitizer, a detector of uninitialized reads. Requires instrumentation of all program code.
+-fsanitize=undefined: UndefinedBehaviorSanitizer, a fast and compatible undefined behavior checker.
+-fsanitize=type: TypeSanitizer, a detector for strict aliasing violations.
+-fsanitize=dataflow: DataFlowSanitizer, a general data flow analysis.
+-fsanitize=cfi: control flow integrity checks. Requires -flto.
+-fsanitize=kcfi: kernel indirect call forward-edge control flow integrity.
+-fsanitize=safe-stack: safe stack protection against stack-based memory corruption errors.
+-fsanitize=realtime: RealtimeSanitizer, a real-time safety checker.
+```
+
+## GNU Compiler Collection 
+
+```shell
+## Compile
+cd ./build
+
+gcc ../src/*.c
+
+ar -crs syntax.a ./*.o
+
+ar -crs syntax.so ./*.o
 
 ## Analyze
 -fanalyzer

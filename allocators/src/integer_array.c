@@ -2,10 +2,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 // Return the Length of the Dynamic Integer Array
-int array_length(int *array[]) {
-  int index = 0;
+int8_t array_length(int8_t *array[]) {
+  int8_t index = 0;
 
   while(array[index] != NULL) {
     index = index + 1;
@@ -17,9 +18,9 @@ int array_length(int *array[]) {
 // Clear all Elements from the Dynamic Integer Array
 // Assigns the Value of all Elements to NULL
 // Returns the Array
-int clear_array(int *array[]) {  
-  int index;
-  int length = array_length(array);
+int8_t clear_array(int8_t *array[]) {  
+  int8_t index;
+  int8_t length = array_length(array);
 
   for (index = 0; index < length; index = index + 1) {
     array[index] = NULL;
@@ -31,17 +32,17 @@ int clear_array(int *array[]) {
 // Create Dynamic Integer Array
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-int create_array(int *array[], int capacity) {  
+int8_t create_array(int8_t *array[], int8_t capacity) {  
   if (capacity == 0) {
     capacity = 4;
-    array = malloc(sizeof(int[capacity]));
+    array = malloc(sizeof(int8_t[capacity]));
     
     if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
       return **array;
     }
   } else if (capacity != 0) {
-    array = malloc(sizeof(int[capacity]));
+    array = malloc(sizeof(int8_t[capacity]));
 
     if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
@@ -57,11 +58,11 @@ int create_array(int *array[], int capacity) {
 // Shifts all Elements after it, to the Right
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-int insert_element(int *array[], int element, int index) {
-  int address;
-  int length = array_length(array);
+int8_t insert_element(int8_t *array[], int8_t element, int8_t index) {
+  int8_t address;
+  int8_t length = array_length(array);
 
-  array = realloc(array,sizeof(int[length + 1]));
+  array = realloc(array,sizeof(int8_t[length + 1]));
 
   if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
@@ -80,10 +81,10 @@ int insert_element(int *array[], int element, int index) {
 // Append an Element to the End of the Dynamic Integer Array
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-int push_element(int *array[], int element) {
-  int length = array_length(array);
+int8_t push_element(int8_t *array[], int8_t element) {
+  int8_t length = array_length(array);
 
-  array = realloc(array,sizeof(int[length + 1]));
+  array = realloc(array,sizeof(int8_t[length + 1]));
     
   if (array == NULL) {    
       printf(stderr, "Memory Allocation Error\n");
@@ -100,16 +101,16 @@ int push_element(int *array[], int element) {
 // Returns the Element
 // Shifts all Elements after it, to the Left
 // Returns NULL if Memory Allocation Failed
-int remove_element(int *array[], int index) {
-  int address;
-  int *element = array[index];
-  int length = array_length(array);    
+int8_t remove_element(int8_t *array[], int8_t index) {
+  int8_t address;
+  int8_t *element = array[index];
+  int8_t length = array_length(array);    
   
   for (address = index; address < length; address = address + 1) {
     array[address] = array[address + 1];
   }
   
-  array = realloc(array,sizeof(int[length - 1]));
+  array = realloc(array,sizeof(int8_t[length - 1]));
 
   if (array == NULL) {
       printf(stderr, "Memory Allocation Error\n");

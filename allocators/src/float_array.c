@@ -7,7 +7,7 @@
 
 // Return the Length of the Dynamic Float Array
 int8_t array_length(float_t *array[]) {
-  int8_t index = 0;
+  int index = 0;
 
   while (array[index] != NULL) {
     index = index + 1;
@@ -20,7 +20,7 @@ int8_t array_length(float_t *array[]) {
 // Assigns the Value of all Elements to NULL
 // Returns the Array
 float_t clear_array(float_t *array[]) {
-  int8_t index;
+  int index;
   int8_t length = array_length(array);
 
   for (index = 0; index < length; index = index + 1) {
@@ -59,7 +59,7 @@ float_t create_array(float_t *array[], int8_t capacity) {
 // Shifts all Elements after it, to the Right
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-float_t insert_element(float_t *array[], float_t element, int8_t index) {
+float_t insert_element(float_t *array[], float_t element, int index) {
   int8_t address;
   int8_t length = array_length(array);
 
@@ -102,7 +102,7 @@ float_t push_element(float_t *array[], float_t element) {
 // Returns the Element
 // Shifts all Elements after it, to the Left
 // Returns NULL if Memory Allocation Failed
-float_t remove_element(float_t *array[], int8_t index) {
+float_t remove_element(float_t *array[], int index) {
   int8_t address;
   float_t *element = array[index];
   int8_t length = array_length(array);

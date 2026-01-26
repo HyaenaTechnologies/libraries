@@ -6,7 +6,7 @@
 
 // Return the Length of the Dynamic Unsigned Integer Array
 int8_t array_length(uint8_t *array[]) {
-  int8_t index = 0;
+  int index = 0;
 
   while (array[index] != NULL) {
     index = index + 1;
@@ -19,7 +19,7 @@ int8_t array_length(uint8_t *array[]) {
 // Assigns the Value of all Elements to NULL
 // Returns the Array
 uint8_t clear_array(uint8_t *array[]) {
-  int8_t index;
+  int index;
   int8_t length = array_length(array);
 
   for (index = 0; index < length; index = index + 1) {
@@ -58,7 +58,7 @@ uint8_t create_array(uint8_t *array[], int8_t capacity) {
 // Shifts all Elements after it, to the Right
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-uint8_t insert_element(uint8_t *array[], uint8_t element, int8_t index) {
+uint8_t insert_element(uint8_t *array[], uint8_t element, int index) {
   int8_t address;
   int8_t length = array_length(array);
 
@@ -101,7 +101,7 @@ uint8_t push_element(uint8_t *array[], uint8_t element) {
 // Returns the Element
 // Shifts all Elements after it, to the Left
 // Returns NULL if Memory Allocation Failed
-uint8_t remove_element(uint8_t *array[], int8_t index) {
+uint8_t remove_element(uint8_t *array[], int index) {
   int8_t address;
   uint8_t *element = array[index];
   int8_t length = array_length(array);

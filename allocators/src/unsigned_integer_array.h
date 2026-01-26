@@ -21,7 +21,7 @@ uint8_t create_array(uint8_t *array[], int8_t capacity);
 // Shifts all Elements after it, to the Right
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-uint8_t insert_element(uint8_t *array[], uint8_t element, int8_t index);
+uint8_t insert_element(uint8_t *array[], uint8_t element, int index);
 
 // Append an Element to the End of the Dynamic Unsigned Integer Array
 // Returns the Array
@@ -33,6 +33,6 @@ uint8_t push_element(uint8_t *array[], uint8_t element);
 // Returns the Element
 // Shifts all Elements after it, to the Left
 // Returns NULL if Memory Allocation Failed
-uint8_t remove_element(uint8_t *array[], int8_t index);
+uint8_t remove_element(uint8_t *array[], int index);
 
 #endif

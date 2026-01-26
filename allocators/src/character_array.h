@@ -21,7 +21,7 @@ char create_array(char *array[], int8_t capacity);
 // Shifts all Elements after it, to the Right
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-char insert_element(char *array[], char element, int8_t index);
+char insert_element(char *array[], char element, int index);
 
 // Append an Element to the End of the Dynamic Character Array
 // Returns the Array
@@ -33,6 +33,6 @@ char push_element(char *array[], char element);
 // Returns the Element
 // Shifts all Elements after it, to the Left
 // Returns NULL if Memory Allocation Failed
-char remove_element(char *array[], int8_t index);
+char remove_element(char *array[], int index);
 
 #endif

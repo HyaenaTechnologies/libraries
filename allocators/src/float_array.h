@@ -22,7 +22,7 @@ float create_array(float_t *array[], int8_t capacity);
 // Shifts all Elements after it, to the Right
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-float insert_element(float_t *array[], float_t element, int8_t index);
+float insert_element(float_t *array[], float_t element, int index);
 
 // Append an Element to the End of the Dynamic Float Array
 // Returns the Array
@@ -34,6 +34,6 @@ float push_element(float_t *array[], float_t element);
 // Returns the Element
 // Shifts all Elements after it, to the Left
 // Returns NULL if Memory Allocation Failed
-float remove_element(float_t *array[], int8_t index);
+float remove_element(float_t *array[], int index);
 
 #endif

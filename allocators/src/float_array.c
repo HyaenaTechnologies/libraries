@@ -7,7 +7,7 @@
 int array_length(float *array[]) {
   int index = 0;
 
-  while(array[index] != NULL) {
+  while (array[index] != NULL) {
     index = index + 1;
   }
 
@@ -17,33 +17,33 @@ int array_length(float *array[]) {
 // Clear all Elements from the Dynamic Float Array
 // Assigns the Value of all Elements to NULL
 // Returns the Array
-float clear_array(float *array[]) {  
+float clear_array(float *array[]) {
   int index;
   int length = array_length(array);
-    
+
   for (index = 0; index < length; index = index + 1) {
     array[index] = NULL;
   }
-    
+
   return **array;
 }
 
 // Create Dynamic Float Array
 // Returns the Array
 // Returns NULL if Memory Allocation Failed
-float create_array(float *array[], int capacity) {  
+float create_array(float *array[], int capacity) {
   if (capacity == 0) {
     capacity = 4;
     array = malloc(sizeof(int[capacity]));
-    
-    if (array == NULL) {    
+
+    if (array == NULL) {
       printf(stderr, "Memory Allocation Error\n");
       return **array;
     }
   } else if (capacity != 0) {
     array = malloc(sizeof(int[capacity]));
 
-    if (array == NULL) {    
+    if (array == NULL) {
       printf(stderr, "Memory Allocation Error\n");
       return **array;
     }
@@ -61,21 +61,21 @@ float insert_element(float *array[], int element, int index) {
   int address;
   int length = array_length(array);
 
-  array = realloc(array,sizeof(int[length + 1]));
+  array = realloc(array, sizeof(int[length + 1]));
 
-  if (array == NULL) {    
-      printf(stderr, "Memory Allocation Error\n");
-      return **array;
+  if (array == NULL) {
+    printf(stderr, "Memory Allocation Error\n");
+    return **array;
   }
-  
+
   for (address = index; address < length; address = address + 1) {
     array[address] = array[address - 1];
   }
 
   *array[index] = element;
-  
+
   return **array;
- }
+}
 
 // Append an Element to the End of the Dynamic Float Array
 // Returns the Array
@@ -83,11 +83,11 @@ float insert_element(float *array[], int element, int index) {
 float push_element(float *array[], int element) {
   int length = array_length(array);
 
-  array = realloc(array,sizeof(int[length + 1]));
-    
-  if (array == NULL) {    
-      printf(stderr, "Memory Allocation Error\n");
-      return **array;
+  array = realloc(array, sizeof(int[length + 1]));
+
+  if (array == NULL) {
+    printf(stderr, "Memory Allocation Error\n");
+    return **array;
   }
 
   *array[length + 1] = element;
@@ -103,19 +103,18 @@ float push_element(float *array[], int element) {
 float remove_element(float *array[], int index) {
   int address;
   float *element = array[index];
-  int length = array_length(array);    
-  
+  int length = array_length(array);
+
   for (address = index; address < length; address = address + 1) {
     array[address] = array[address + 1];
   }
-  
-  array = realloc(array,sizeof(int[length - 1]));
+
+  array = realloc(array, sizeof(int[length - 1]));
 
   if (array == NULL) {
-      printf(stderr, "Memory Allocation Error\n");
-      return **array;
+    printf(stderr, "Memory Allocation Error\n");
+    return **array;
   }
 
   return *element;
 }
-

@@ -34,4 +34,3 @@ char push_element(char *array[], int element);
 char remove_element(char *array[], int index);
 
 #endif
-

@@ -36,4 +36,3 @@ int8_t push_element(int8_t *array[], int8_t element);
 int8_t remove_element(int8_t *array[], int8_t index);
 
 #endif
-

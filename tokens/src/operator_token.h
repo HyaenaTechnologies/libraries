@@ -1,7 +1,7 @@
 #ifndef OPERATOR_TOKEN_H
 #define OPERATOR_TOKEN_H
 
-//Operator Tokens
+// Operator Tokens
 extern const char ADDITION;
 extern const char ANNOTATION;
 extern const char ASSIGNMENT;
@@ -27,4 +27,3 @@ extern const char TILDE;
 extern const char UNDERSCORE;
 
 #endif
-

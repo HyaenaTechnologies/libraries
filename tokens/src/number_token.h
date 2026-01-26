@@ -1,7 +1,7 @@
 #ifndef NUMBER_TOKEN_H
 #define NUMBER_TOKEN_H
 
-//Number Tokens
+// Number Tokens
 extern const char ZERO;
 extern const char ONE;
 extern const char TWO;
@@ -14,4 +14,3 @@ extern const char EIGHT;
 extern const char NINE;
 
 #endif
-

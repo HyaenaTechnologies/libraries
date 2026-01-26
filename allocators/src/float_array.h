@@ -34,4 +34,3 @@ float push_element(float *array[], int element);
 float remove_element(float *array[], int index);
 
 #endif
-

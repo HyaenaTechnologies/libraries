@@ -1,7 +1,7 @@
 #ifndef COMMENT_TOKEN_H
 #define COMMENT_TOKEN_H
 
-//Comment Tokens
+// Comment Tokens
 extern const char BLOCK[3];
 extern const char LINE[3];
 extern const char INNER_LINE[4];
@@ -16,4 +16,3 @@ extern const char OCTOTHROPE_OUTER_LINE[4];
 extern const char OCTOTHORPE_OUTER_BLOCK[4];
 
 #endif
-

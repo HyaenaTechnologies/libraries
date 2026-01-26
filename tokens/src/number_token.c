@@ -1,6 +1,6 @@
 #include "./number_token.h"
 
-//Number Tokens
+// Number Tokens
 const char ZERO = '0';
 const char ONE = '1';
 const char TWO = '2';
@@ -11,4 +11,3 @@ const char SIX = '6';
 const char SEVEN = '7';
 const char EIGHT = '8';
 const char NINE = '9';
-

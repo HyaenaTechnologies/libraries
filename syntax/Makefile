@@ -11,15 +11,15 @@ all: build
 build: ./src/*.c
 	cd ./build
 	clang $(CFLAGS) ../src/*.c
-	ar -rcs syntax.a ./*.o
-	ar -rcs syntax.so ./*.o
+	ar -rcs tokens.a ./*.o
+	ar -rcs tokens.so ./*.o
 
 # Check Package
 check: ./src/*.c
 	cd ./build
 	clang $(ANALYSIS_FLAGS) ../src/*.c
-	ar -rcs syntax.a ./*.o
-	ar -rcs syntax.so ./*.o
+	ar -rcs tokens.a ./*.o
+	ar -rcs tokens.so ./*.o
 
 # Clean Package
 clean:

@@ -7,13 +7,13 @@
 [Low Level Debugger]: https://lldb.llvm.org/
 [Low Level Linker]: https://lld.llvm.org/
 
-# Syntax
+# Tokens
 
-Generic Syntax Tree for Parsers
+Tokens and Token Types for Tokenizers
 
 ## Features
 
-- Syntax Tree
+- Tokens
 
 ## Build
 
@@ -46,9 +46,9 @@ cd ./build
 
 clang ../src/*.c
 
-ar -crs syntax.a ./*.o
+ar -crs tokens.a ./*.o
 
-ar -crs syntax.so ./*.o
+ar -crs tokens.so ./*.o
 
 ## Analyze
 --analyze: Run the static analyzer
@@ -74,9 +74,9 @@ cd ./build
 
 gcc ../src/*.c
 
-ar -crs syntax.a ./*.o
+ar -crs tokens.a ./*.o
 
-ar -crs syntax.so ./*.o
+ar -crs tokens.so ./*.o
 
 ## Analyze
 -fanalyzer
